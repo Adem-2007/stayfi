@@ -1,0 +1,154 @@
+{
+  "header": {
+    "title": "Tableau de Bord",
+    "subtitle": "Gérez vos projets et étapes",
+    "backToApp": "Retour à l'Application"
+  },
+  "sidebar": {
+    "title": "Tableau de Bord",
+    "steps": "Étapes",
+    "companyProjects": "Projets d'Entreprise",
+    "customerProjects": "Projets Clients",
+    "backToApp": "Retour à l'Application",
+    "logout": "Déconnexion"
+  },
+  "companyProjects": {
+    "title": "Projets d'Entreprise",
+    "subtitle": "Voir et gérer les soumissions de projets d'entreprise",
+    "noProjects": "Aucun Projet d'Entreprise",
+    "noProjectsDesc": "Les soumissions de projets d'entreprise apparaîtront ici",
+    "viewDetails": "Voir les Détails"
+  },
+  "customerProjects": {
+    "title": "Projets Clients",
+    "subtitle": "Voir et gérer les soumissions de projets clients",
+    "noProjects": "Aucun Projet Client",
+    "noProjectsDesc": "Les soumissions de projets clients apparaîtront ici",
+    "viewDetails": "Voir les Détails"
+  },
+  "projectDetails": {
+    "title": "Détails du Projet",
+    "basicInfo": "Informations de Base",
+    "name": "Nom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "status": "Statut",
+    "projectGoal": "Objectif du Projet",
+    "industry": "Industrie",
+    "companySize": "Taille de l'Entreprise",
+    "platforms": "Plateformes",
+    "pages": "Pages",
+    "features": "Fonctionnalités",
+    "design": "Design",
+    "designOption": "Option de Design",
+    "designDescription": "Description",
+    "designUrl": "URL de Référence",
+    "techStack": "Stack Technologique",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Base de Données",
+    "hostingAi": "Hébergement & IA",
+    "hosting": "Hébergement",
+    "aiImplementation": "Implémentation IA",
+    "securityPayment": "Sécurité & Paiement",
+    "securityLevel": "Niveau de Sécurité",
+    "paymentMethod": "Méthode de Paiement",
+    "yes": "Oui",
+    "no": "Non",
+    "close": "Fermer"
+  },
+  "buttons": {
+    "createNew": "Créer une Nouvelle Étape",
+    "addField": "Ajouter un Champ",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "back": "Retour",
+    "continue": "Continuer",
+    "saveStep": "Enregistrer l'Étape",
+    "saveField": "Enregistrer le Champ",
+    "addOption": "Ajouter une Option",
+    "remove": "Supprimer"
+  },
+  "stepBuilder": {
+    "titleEdit": "Modifier l'Étape",
+    "titleCreate": "Créer une Nouvelle Étape",
+    "subtitle": "Définissez votre étape personnalisée avec support multilingue",
+    "stepTitle": "Titre",
+    "stepSubtitle": "Sous-titre",
+    "stepOrder": "Ordre de l'Étape",
+    "stepOrderHelp": "Les nombres inférieurs apparaissent en premier (0 = après les étapes par défaut)",
+    "formFields": "Champs du Formulaire",
+    "noFields": "Aucun champ ajouté",
+    "noFieldsDesc": "Cliquez sur \"Ajouter un Champ\" pour créer votre premier champ",
+    "required": "Requis",
+    "enterStepTitle": "Entrez le titre de l'étape",
+    "enterStepSubtitle": "Entrez le sous-titre de l'étape (optionnel)",
+    "placeholderPreview": "Texte de Remplissage"
+  },
+  "fieldEditor": {
+    "titleEdit": "Modifier le Champ",
+    "titleCreate": "Ajouter un Nouveau Champ",
+    "subtitle": "Configurer les propriétés et traductions du champ",
+    "fieldType": "Type de Champ",
+    "inputType": "Type d'Entrée",
+    "label": "Étiquette",
+    "placeholder": "Texte de Remplissage",
+    "helpText": "Texte d'Aide",
+    "requiredField": "Champ Requis",
+    "requiredFieldDesc": "L'utilisateur doit remplir ce champ pour continuer",
+    "options": "Options",
+    "addedOptions": "OPTIONS AJOUTÉES:",
+    "noOptions": "Aucune option ajoutée",
+    "searchable": "Recherchable",
+    "searchableDesc": "Permettre aux utilisateurs de rechercher dans les options",
+    "enterOption": "Entrez l'option en",
+    "enterLabel": "Entrez l'étiquette du champ",
+    "enterPlaceholder": "Entrez le texte de remplissage (optionnel)",
+    "enterHelpText": "Entrez le texte d'aide (optionnel)"
+  },
+  "fieldTypes": {
+    "input": "Entrée",
+    "inputDesc": "Texte sur une ligne",
+    "textarea": "Zone de Texte",
+    "textareaDesc": "Texte multiligne",
+    "dropdown": "Liste Déroulante",
+    "dropdownDesc": "Sélectionner une option",
+    "multiselect": "Sélection Multiple",
+    "multiselectDesc": "Sélectionner plusieurs"
+  },
+  "inputTypes": {
+    "text": "Texte",
+    "email": "Email",
+    "tel": "Téléphone",
+    "url": "URL",
+    "number": "Nombre",
+    "date": "Date"
+  },
+  "stepsList": {
+    "title": "Étapes Personnalisées",
+    "step": "Étape",
+    "steps": "Étapes",
+    "noSteps": "Aucune étape personnalisée",
+    "noStepsDesc": "Créez votre première étape personnalisée pour commencer",
+    "order": "Ordre",
+    "field": "Champ",
+    "fields": "Champs",
+    "fieldsPreview": "CHAMPS:"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "ar": "العربية"
+  },
+  "validation": {
+    "fillAllLanguages": "Veuillez remplir l'étiquette pour toutes les langues",
+    "addOneOption": "Veuillez ajouter au moins une option",
+    "fillOptionAllLanguages": "Veuillez remplir l'option pour toutes les langues"
+  },
+  "confirm": {
+    "deleteField": "Supprimer ce champ?",
+    "deleteStep": "Êtes-vous sûr de vouloir supprimer cette étape?"
+  }
+}

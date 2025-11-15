@@ -1,0 +1,154 @@
+{
+  "header": {
+    "title": "Dashboard",
+    "subtitle": "Manage your projects and steps",
+    "backToApp": "Back to Application"
+  },
+  "sidebar": {
+    "title": "Dashboard",
+    "steps": "Steps",
+    "companyProjects": "Company Projects",
+    "customerProjects": "Customer Projects",
+    "backToApp": "Back to App",
+    "logout": "Logout"
+  },
+  "companyProjects": {
+    "title": "Company Projects",
+    "subtitle": "View and manage company project submissions",
+    "noProjects": "No Company Projects",
+    "noProjectsDesc": "Company project submissions will appear here",
+    "viewDetails": "View Details"
+  },
+  "customerProjects": {
+    "title": "Customer Projects",
+    "subtitle": "View and manage customer project submissions",
+    "noProjects": "No Customer Projects",
+    "noProjectsDesc": "Customer project submissions will appear here",
+    "viewDetails": "View Details"
+  },
+  "projectDetails": {
+    "title": "Project Details",
+    "basicInfo": "Basic Information",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "status": "Status",
+    "projectGoal": "Project Goal",
+    "industry": "Industry",
+    "companySize": "Company Size",
+    "platforms": "Platforms",
+    "pages": "Pages",
+    "features": "Features",
+    "design": "Design",
+    "designOption": "Design Option",
+    "designDescription": "Description",
+    "designUrl": "Reference URL",
+    "techStack": "Technology Stack",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "hostingAi": "Hosting & AI",
+    "hosting": "Hosting",
+    "aiImplementation": "AI Implementation",
+    "securityPayment": "Security & Payment",
+    "securityLevel": "Security Level",
+    "paymentMethod": "Payment Method",
+    "yes": "Yes",
+    "no": "No",
+    "close": "Close"
+  },
+  "buttons": {
+    "createNew": "Create New Step",
+    "addField": "Add Field",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back",
+    "continue": "Continue",
+    "saveStep": "Save Step",
+    "saveField": "Save Field",
+    "addOption": "Add Option",
+    "remove": "Remove"
+  },
+  "stepBuilder": {
+    "titleEdit": "Edit Step",
+    "titleCreate": "Create New Step",
+    "subtitle": "Define your custom step with multi-language support",
+    "stepTitle": "Title",
+    "stepSubtitle": "Subtitle",
+    "stepOrder": "Step Order",
+    "stepOrderHelp": "Lower numbers appear first (0 = after default steps)",
+    "formFields": "Form Fields",
+    "noFields": "No fields added yet",
+    "noFieldsDesc": "Click \"Add Field\" to create your first field",
+    "required": "Required",
+    "enterStepTitle": "Enter step title",
+    "enterStepSubtitle": "Enter step subtitle (optional)",
+    "placeholderPreview": "Placeholder"
+  },
+  "fieldEditor": {
+    "titleEdit": "Edit Field",
+    "titleCreate": "Add New Field",
+    "subtitle": "Configure field properties and translations",
+    "fieldType": "Field Type",
+    "inputType": "Input Type",
+    "label": "Label",
+    "placeholder": "Placeholder",
+    "helpText": "Help Text",
+    "requiredField": "Required Field",
+    "requiredFieldDesc": "User must fill this field to continue",
+    "options": "Options",
+    "addedOptions": "ADDED OPTIONS:",
+    "noOptions": "No options added yet",
+    "searchable": "Searchable",
+    "searchableDesc": "Allow users to search through options",
+    "enterOption": "Enter option in",
+    "enterLabel": "Enter field label",
+    "enterPlaceholder": "Enter placeholder text (optional)",
+    "enterHelpText": "Enter help text (optional)"
+  },
+  "fieldTypes": {
+    "input": "Input",
+    "inputDesc": "Single line text",
+    "textarea": "Textarea",
+    "textareaDesc": "Multi-line text",
+    "dropdown": "Dropdown",
+    "dropdownDesc": "Select one option",
+    "multiselect": "Multi-Select",
+    "multiselectDesc": "Select multiple"
+  },
+  "inputTypes": {
+    "text": "Text",
+    "email": "Email",
+    "tel": "Phone",
+    "url": "URL",
+    "number": "Number",
+    "date": "Date"
+  },
+  "stepsList": {
+    "title": "Custom Steps",
+    "step": "Step",
+    "steps": "Steps",
+    "noSteps": "No custom steps yet",
+    "noStepsDesc": "Create your first custom step to get started",
+    "order": "Order",
+    "field": "Field",
+    "fields": "Fields",
+    "fieldsPreview": "FIELDS:"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "ar": "العربية"
+  },
+  "validation": {
+    "fillAllLanguages": "Please fill in the label for all languages",
+    "addOneOption": "Please add at least one option",
+    "fillOptionAllLanguages": "Please fill in the option for all languages"
+  },
+  "confirm": {
+    "deleteField": "Delete this field?",
+    "deleteStep": "Are you sure you want to delete this step?"
+  }
+}

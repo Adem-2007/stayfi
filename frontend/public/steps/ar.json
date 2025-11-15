@@ -1,0 +1,372 @@
+{
+  "header": {
+    "appName": "StayFi",
+    "stepLabel": "الخطوة",
+    "of": "من"
+  },
+  "userType": {
+    "title": "مرحباً بك في ستاي فاي",
+    "subtitle": "لنبدأ مع مشروعك",
+    "helpText": "لا تقلق، يمكنك دائمًا تغيير هذا لاحقًا",
+    "description": "اختر الخيار الذي يصفك بشكل أفضل",
+    "company": {
+      "title": "شركة",
+      "description": "أمثل شركة أو مؤسسة"
+    },
+    "individual": {
+      "title": "فرد",
+      "description": "أعمل على مشروع شخصي"
+    }
+  },
+  "customerInfo": {
+    "title": "المعلومات الشخصية",
+    "subtitle": "أخبرنا عن نفسك",
+    "whatsappNumber": "رقم الواتساب",
+    "name": "الاسم الكامل",
+    "namePlaceholder": "أحمد محمد",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "ahmed@example.com",
+    "phone": "رقم الهاتف",
+    "phonePlaceholder": "+966 50 123 4567",
+    "country": "الدولة",
+    "countryPlaceholder": "اختر دولتك",
+    "websiteUrl": "رابط الموقع",
+    "websiteUrlPlaceholder": "https://yourwebsite.com",
+    "back": "رجوع",
+    "continue": "متابعة",
+    "serviceDescription": "وصف الخدمة",
+    "serviceDescriptionPlaceholder": "صف البرنامج أو الخدمة التي تحتاجها...",
+    "serviceHelpText": "أخبرنا عن مشروعك وأهدافك وأي متطلبات محددة"
+  },
+  "companyInfo": {
+    "title": "معلومات الشركة",
+    "subtitle": "أخبرنا عن شركتك",
+    "companyName": "اسم الشركة",
+    "businessAddress": "عنوان الشركة",
+    "businessAddressPlaceholder": "أدخل عنوان شركتك",
+    "companyNamePlaceholder": "شركة أكمي",
+    "industry": "المجال",
+    "industryPlaceholder": "اختر مجال عملك",
+    "employeeCount": "عدد الموظفين",
+    "employeeCountPlaceholder": "اختر عدد الموظفين",
+    "email": "البريد الإلكتروني للشركة",
+    "emailPlaceholder": "contact@company.com",
+    "phone": "رقم الهاتف",
+    "phonePlaceholder": "+966 50 123 4567",
+    "country": "الدولة",
+    "countryPlaceholder": "اختر دولتك",
+    "websiteUrl": "رابط الموقع",
+    "websiteUrlPlaceholder": "https://company.com",
+    "back": "رجوع",
+    "continue": "متابعة"
+  },
+  "emailVerification": {
+    "title": "التحقق من البريد الإلكتروني",
+    "subtitle": "لقد أرسلنا رمز التحقق إلى",
+    "description": "الرجاء إدخال الرمز المكون من 6 أرقام للمتابعة",
+    "codePlaceholder": "أدخل الرمز المكون من 6 أرقام",
+    "resend": "إعادة إرسال الرمز",
+    "verify": "التحقق والمتابعة",
+    "sending": "جاري الإرسال...",
+    "noCodeReceived": "لم تستلم الرمز؟",
+    "resendIn": "إعادة إرسال الرمز خلال",
+    "spamTitle": "تحقق من مجلد الرسائل غير المرغوب فيها",
+    "spamDescription": "إذا لم تجد البريد الإلكتروني في صندوق الوارد، يرجى التحقق من مجلد الرسائل غير المرغوب فيها. تنتهي صلاحية الرمز خلال 10 دقائق.",
+    "successMessage": "تم التحقق من البريد الإلكتروني بنجاح!",
+    "verifying": "جاري التحقق..."
+  },
+  "projectDescription": {
+    "title": "وصف المشروع",
+    "subtitle": "أخبرنا عن أهداف مشروعك",
+    "principalGoal": "ما هو هدفك الرئيسي؟",
+    "principalGoalPlaceholder": "صف هدفك الرئيسي...",
+    "principalGoalHelpText": "صف الهدف التجاري الأساسي أو النتيجة التي تسعى لتحقيقها",
+    "currentProblem": "ما المشكلة التي تحاول حلها؟",
+    "currentProblemPlaceholder": "صف التحدي...",
+    "currentProblemHelpText": "اشرح التحديات أو أوجه القصور التي تواجهها",
+    "targetAudience": "من هو جمهورك المستهدف؟",
+    "targetAudiencePlaceholder": "صف المستخدمين المستهدفين...",
+    "targetAudienceHelpText": "فهم جمهورك يساعدنا في تصميم الحل الأمثل",
+    "projectGoal": "ما هو هدف مشروعك؟",
+    "projectGoalPlaceholder": "صف ما تريد تحقيقه...",
+    "problemsToSolve": "ما المشاكل التي تريد حلها؟",
+    "problemsToSolvePlaceholder": "صف المشاكل...",
+    "back": "رجوع",
+    "continue": "متابعة"
+  },
+  "platformSelection": {
+    "title": "اختر",
+    "highlightedTitle": "منصتك",
+    "subtitle": "حدد جميع المنصات التي تحتاجها لمشروعك",
+    "back": "رجوع",
+    "continue": "المتابعة إلى الخطوة التالية",
+    "mobileName": "تطبيق جوال",
+    "mobileDesc": "تطبيقات iOS و Android",
+    "desktopName": "تطبيق سطح المكتب",
+    "desktopDesc": "Windows, Mac, Linux",
+    "websiteName": "موقع إلكتروني",
+    "websiteDesc": "تطبيق أو موقع ويب",
+    "otherName": "أخرى",
+    "otherDesc": "حدد منصتك",
+    "otherLabel": "حدد منصتك",
+    "otherPlaceholder": "مثال: تطبيق تلفزيون ذكي، جهاز إنترنت الأشياء، إضافة متصفح...",
+    "errorSelectOne": "الرجاء اختيار منصة واحدة على الأقل",
+    "errorSpecifyOther": "الرجاء تحديد منصتك",
+    "infoBoxTitle": "منصات متعددة؟",
+    "infoBoxText": "يمكنك اختيار عدة منصات إذا كان مشروعك يتطلب تطويرًا متعدد المنصات. سنقوم بتخصيص حلنا ليعمل بسلاسة عبر جميع المنصات التي اخترتها."
+  },
+  "siteRequirements": {
+    "title": "المتطلبات",
+    "highlightedTitle": "التقنية",
+    "subtitle": "حدد المواصفات التقنية لمشروعك",
+    "back": "رجوع",
+    "continue": "المتابعة إلى الأمان والدفع",
+    "pages": {
+      "title": "الصفحات والشاشات",
+      "label": "حدد الصفحات التي تحتاجها",
+      "otherLabel": "تحديد صفحات أخرى",
+      "otherPlaceholder": "مثال: معرض الأعمال، الشهادات، الفريق...",
+      "options": [
+        { "id": "home", "name": "الصفحة الرئيسية", "description": "صفحة الهبوط" },
+        { "id": "about", "name": "من نحن", "description": "معلومات الشركة" },
+        { "id": "contact", "name": "اتصل بنا", "description": "نموذج الاتصال" },
+        { "id": "services", "name": "الخدمات", "description": "قائمة الخدمات" },
+        { "id": "pricing", "name": "الأسعار", "description": "خطط الأسعار" },
+        { "id": "blog", "name": "المدونة", "description": "مقالات وأخبار" },
+        { "id": "faq", "name": "الأسئلة الشائعة", "description": "أسئلة متكررة" },
+        { "id": "dashboard", "name": "لوحة التحكم", "description": "لوحة تحكم المستخدم" },
+        { "id": "profile", "name": "الملف الشخصي", "description": "ملف المستخدم" },
+        { "id": "settings", "name": "الإعدادات", "description": "إعدادات التطبيق" },
+        { "id": "auth", "name": "المصادقة", "description": "تسجيل الدخول/التسجيل" },
+        { "id": "checkout", "name": "الدفع", "description": "عملية الدفع" },
+        { "id": "other-page", "name": "أخرى", "description": "حدد أدناه" }
+      ]
+    },
+    "features": {
+      "title": "ميزات إضافية",
+      "label": "حدد الميزات التي تريد تضمينها",
+      "otherLabel": "تحديد ميزات أخرى",
+      "otherPlaceholder": "مثال: بث الفيديو، التعاون في الوقت الفعلي...",
+      "options": [
+        { "id": "notifications", "name": "إشعارات الدفع", "description": "تنبيهات فورية" },
+        { "id": "multilang", "name": "متعدد اللغات", "description": "دعم i18n" },
+        { "id": "darkmode", "name": "الوضع الداكن", "description": "تبديل المظهر" },
+        { "id": "search", "name": "بحث", "description": "بحث في المحتوى" },
+        { "id": "chat", "name": "دردشة مباشرة", "description": "دعم العملاء" },
+        { "id": "analytics", "name": "تحليلات", "description": "تتبع الاستخدام" },
+        { "id": "payment", "name": "بوابة الدفع", "description": "المدفوعات عبر الإنترنت" },
+        { "id": "social", "name": "تسجيل الدخول الاجتماعي", "description": "تكامل OAuth" },
+        { "id": "export", "name": "تصدير البيانات", "description": "تصدير PDF/CSV" },
+        { "id": "calendar", "name": "تقويم", "description": "جدولة الأحداث" },
+        { "id": "maps", "name": "تكامل الخرائط", "description": "خدمات الموقع" },
+        { "id": "email", "name": "خدمة البريد الإلكتروني", "description": "رسائل بريد إلكتروني آلية" },
+        { "id": "other-feature", "name": "أخرى", "description": "حدد أدناه" }
+      ]
+    },
+    "design": {
+      "title": "تفضيلات التصميم",
+      "upload": "رفع تصميم",
+      "uploadDesc": "صور أو نماذج",
+      "describe": "وصف التصميم",
+      "describeDesc": "وصف نصي",
+      "share": "مشاركة رابط",
+      "shareDesc": "Figma, Adobe XD",
+      "uploadLabel": "رفع ملفات التصميم",
+      "describeLabel": "صف رؤيتك للتصميم",
+      "describePlaceholder": "صف الألوان، التخطيط، النمط، الإلهام...",
+      "urlLabel": "رابط ملف التصميم",
+      "urlPlaceholder": "https://figma.com/file/..."
+    },
+    "techStack": {
+      "title": "الحزمة التقنية",
+      "frontendLabel": "تقنيات الواجهة الأمامية",
+      "otherFrontendLabel": "تحديد تقنيات الواجهة الأمامية",
+      "otherFrontendPlaceholder": "مثال: Vue.js, Angular, Next.js...",
+      "backendLabel": "تقنيات الواجهة الخلفية",
+      "otherBackendLabel": "تحديد تقنيات الواجهة الخلفية",
+      "otherBackendPlaceholder": "مثال: Python, Java, Go...",
+      "website": [
+        { "id": "react", "name": "React", "description": "مكتبة شائعة" },
+        { "id": "svelte", "name": "Svelte", "description": "سريع وحديث" },
+        { "id": "tailwind", "name": "Tailwind CSS", "description": "CSS خدمي" },
+        { "id": "css", "name": "CSS مخصص", "description": "CSS خالص" }
+      ],
+      "mobile": [
+        { "id": "react-native", "name": "React Native", "description": "متعدد المنصات" },
+        { "id": "flutter", "name": "Flutter", "description": "إطار عمل جوجل" }
+      ],
+      "desktop": [
+        { "id": "electron", "name": "Electron", "description": "متعدد المنصات" },
+        { "id": "rust-tauri", "name": "Rust (Tauri)", "description": "أداء أصلي" }
+      ],
+      "backend": [
+        { "id": "node", "name": "Node.js", "description": "بيئة تشغيل JavaScript" },
+        { "id": "rust", "name": "Rust", "description": "أداء عالي" }
+      ],
+      "otherFrontend": { "id": "other-frontend", "name": "أخرى", "description": "حدد أدناه" },
+      "otherBackend": { "id": "other-backend", "name": "أخرى", "description": "حدد أدناه" }
+    },
+    "verificationDb": {
+      "verificationTitle": "التحقق من المستخدم",
+      "databaseTitle": "قاعدة البيانات",
+      "otherDatabaseLabel": "تحديد قواعد بيانات أخرى",
+      "otherDatabasePlaceholder": "مثال: Redis, Cassandra, Firebase...",
+      "verificationOptions": [
+        { "id": "email", "name": "التحقق عبر البريد الإلكتروني", "description": "عبر البريد الإلكتروني" },
+        { "id": "sms", "name": "التحقق عبر الرسائل القصيرة", "description": "عبر الهاتف" },
+        { "id": "both", "name": "كلاهما", "description": "البريد الإلكتروني والرسائل القصيرة" }
+      ],
+      "databaseOptions": [
+        { "id": "mongodb", "name": "MongoDB", "description": "قاعدة بيانات NoSQL" },
+        { "id": "postgresql", "name": "PostgreSQL", "description": "قاعدة بيانات علائقية" },
+        { "id": "mysql", "name": "MySQL", "description": "قاعدة بيانات SQL شائعة" },
+        { "id": "other-db", "name": "أخرى", "description": "حدد أدناه" }
+      ]
+    },
+    "hostingAi": {
+      "hostingTitle": "تفضيلات الاستضافة",
+      "hostingPlaceholder": "اختر خيار الاستضافة",
+      "otherHostingLabel": "تحديد الاستضافة",
+      "otherHostingPlaceholder": "مثال: Heroku, DigitalOcean...",
+      "aiTitle": "تكامل الذكاء الاصطناعي",
+      "aiFeatures": "تطبيق ميزات الذكاء الاصطناعي",
+      "aiFeaturesDesc": "أضف قدرات مدعومة بالذكاء الاصطناعي لتطبيقك",
+      "aiAutomation": "الأتمتة بالذكاء الاصطناعي",
+      "aiAutomationDesc": "أتمتة سير العمل بالذكاء الاصطناعي",
+      "hostingOptions": ["VPS", "سحابية (AWS/Azure/GCP)", "أخرى"]
+    },
+    "validation": {
+      "selectAtLeastOne": "الرجاء اختيار خيار واحد على الأقل",
+      "specify": "هذا الحقل مطلوب"
+    }
+  },
+  "securityPayment": {
+    "title": "الأمان و",
+    "highlightedTitle": "الدفع",
+    "subtitle": "قم بتكوين إجراءات الأمان وخيارات الدفع",
+    "back": "رجوع",
+    "continue": "المتابعة إلى الملخص",
+    "validation": {
+      "selectSecurityLevel": "الرجاء تحديد مستوى الأمان",
+      "specifyPayment": "الرجاء تحديد طريقة الدفع الخاصة بك"
+    },
+    "recaptcha": {
+      "title": "تفعيل reCAPTCHA",
+      "recommendation": "موصى به",
+      "description": "احمِ تطبيقك من الرسائل غير المرغوب فيها وإساءة الاستخدام باستخدام Google reCAPTCHA. يضيف هذا طبقة إضافية من الأمان إلى النماذج ويمنع هجمات الروبوتات الآلية.",
+      "benefitsTitle": "الفوائد:",
+      "benefitsText": "يمنع إرسال الرسائل غير المرغوب فيها، ويحمي من هجمات القوة الغاشمة، ويحسن الأمان العام، ويحافظ على تجربة المستخدم من خلال التحقق غير المرئي."
+    },
+    "securityLevels": {
+      "title": "مستوى الأمان",
+      "subtitle": "اختر مستوى الأمان لتطبيقك",
+      "levels": [
+        { "id": "easy", "name": "أساسي", "description": "إجراءات أمان قياسية", "features": ["شهادة SSL", "تشفير كلمة المرور", "تحقق أساسي"] },
+        { "id": "medium", "name": "محسّن", "description": "حماية متقدمة", "features": ["جميع الميزات الأساسية", "المصادقة الثنائية", "إدارة الجلسات", "حظر IP"] },
+        { "id": "hard", "name": "أقصى", "description": "أمان على مستوى الشركات", "features": ["جميع الميزات المحسّنة", "تشفير متقدم", "تدقيق أمني", "حماية DDoS", "اختبار الاختراق"] }
+      ]
+    },
+    "paymentMethods": {
+      "title": "طرق الدفع",
+      "subtitle": "حدد خيارات الدفع لتطبيقك (اختياري)",
+      "otherLabel": "تحديد طريقة الدفع",
+      "otherPlaceholder": "مثال: تحويل بنكي، دفع عبر الهاتف...",
+      "methods": [
+        { "id": "stripe", "name": "Stripe", "description": "بطاقات الائتمان/الخصم" },
+        { "id": "paypal", "name": "PayPal", "description": "مدفوعات باي بال" },
+        { "id": "crypto", "name": "عملة مشفرة", "description": "بيتكوين، إيثريوم" },
+        { "id": "algeria-post", "name": "بريد الجزائر (CCP)", "description": "الخدمة البريدية الجزائرية" },
+        { "id": "other-payment", "name": "أخرى", "description": "حدد أدناه" }
+      ]
+    }
+  },
+  "summary": {
+    "title": "ملخص الطلب",
+    "subtitle": "راجع تفاصيل مشروعك قبل الإرسال",
+    "backToEdit": "العودة للتعديل",
+    "submit": "إرسال الطلب",
+    "submitting": "جاري الإرسال...",
+    "sections": {
+      "applicant": {
+        "title": "معلومات مقدم الطلب",
+        "submittedBy": "تم تقديم هذا الطلب من قبل",
+        "companyIntro": "شركة تعمل في قطاع {industry} بفريق عمل يتكون من {employeeCount} موظف.",
+        "individualIntro": "فرد يبحث عن خدمات تطوير برمجيات.",
+        "contactEmail": "البريد الإلكتروني للتواصل",
+        "phone": "رقم الهاتف",
+        "country": "الدولة",
+        "website": "الموقع الإلكتروني"
+      },
+      "project": {
+        "title": "نظرة عامة على المشروع",
+        "principalGoal": "الهدف الرئيسي",
+        "currentChallenge": "التحدي الحالي",
+        "targetAudience": "الجمهور المستهدف",
+        "projectGoal": "هدف المشروع",
+        "problemsToSolve": "المشاكل المطلوب حلها"
+      },
+      "tech": {
+        "title": "المواصفات الفنية",
+        "platforms": "المنصات المطلوبة",
+        "platformsDesc": "سيتم تطوير التطبيق للمنصات التالية:",
+        "stack": "الحزمة التقنية",
+        "frontend": "تقنيات الواجهة الأمامية:",
+        "backend": "تقنيات الواجهة الخلفية:",
+        "database": "قاعدة البيانات:",
+        "hostingInfra": "الاستضافة والبنية التحتية",
+        "hosting": "الاستضافة:",
+        "ai": "تكامل الذكاء الاصطناعي",
+        "aiFeatures": "ميزات الذكاء الاصطناعي:",
+        "aiAutomation": "أتمتة الذكاء الاصطناعي:",
+        "enabled": "مفعل",
+        "notIncluded": "غير مدرج"
+      },
+      "security": {
+        "title": "إعدادات الأمان والدفع",
+        "measures": "إجراءات الأمان",
+        "measuresDesc": "سيطبق التطبيق مستوى أمان {securityLevel}، {recaptchaStatus} حماية reCAPTCHA للنماذج.",
+        "withRecaptcha": "مع",
+        "withoutRecaptcha": "بدون",
+        "payment": "تكامل الدفع",
+        "paymentDesc": "سيتم دمج طرق الدفع التالية:"
+      },
+      "conclusion": "يمثل ملخص الطلب هذا المتطلبات والمواصفات الكاملة للمشروع المقترح. سيتم استخدام جميع المعلومات المقدمة لإنشاء عرض مشروع مفصل وجدول زمني."
+    },
+    "modal": {
+      "title": "شكرًا لك!",
+      "subtitle": "لقد استلمنا طلبك وسوف نتصل بك قريبًا.",
+      "confirmation": "تأكيد عبر البريد الإلكتروني",
+      "sentTo": "أرسل إلى {email}",
+      "responseTime": "وقت الاستجابة",
+      "withinHours": "في غضون 24-48 ساعة",
+      "nextSteps": "الخطوات التالية",
+      "proposal": "عرض مفصل وجدول زمني",
+      "refNumber": "الرقم المرجعي",
+      "close": "إغلاق"
+    },
+    "common": {
+      "edit": "تعديل",
+      "notSpecified": "لم يحدد",
+      "na": "غير متاح"
+    }
+  },
+  "validation": {
+    "required": "هذا الحقل مطلوب",
+    "email": "الرجاء إدخال بريد إلكتروني صحيح",
+    "phone": "الرجاء إدخال رقم هاتف صحيح",
+    "url": "الرجاء إدخال رابط صحيح",
+    "minLength": "الحد الأدنى للطول هو {min} حرف",
+    "selectAtLeastOne": "الرجاء اختيار خيار واحد على الأقل"
+  },
+  "common": {
+    "optional": "اختياري",
+    "add": "إضافة",
+    "noOptionsFound": "لم يتم العثور على خيارات",
+    "search": "بحث..."
+  },
+  "fileUpload": {
+    "upload": "رفع الملفات",
+    "dragAndDrop": "أو السحب والإفلات",
+    "fileTypes": "PNG, JPG, GIF حتى 10 ميجابايت"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "home": {
+    "navbar": {
+      "services": "Services",
+      "features": "Avantages",
+      "integrations": "Intégrations",
+      "stats": "Statistiques",
+      "getQuote": "Obtenir un devis"
+    },
+    "hero": {
+      "badge": "Solutions logicielles innovantes",
+      "title": "Transformez votre entreprise avec",
+      "highlightedTitle": "StayFi Solutions",
+      "subtitle": "Nous créons des applications logicielles de pointe qui permettent aux entreprises de prospérer à l'ère numérique. Du concept au déploiement, nous livrons l'excellence.",
+      "ctaButton": "Commencer",
+      "secondaryButton": "Voir nos projets",
+      "stats": [
+        { "value": "500+", "label": "Projets livrés" },
+        { "value": "98%", "label": "Satisfaction client" },
+        { "value": "50+", "label": "Experts dans l'équipe" }
+      ]
+    },
+    "services": {
+      "badge": "Nos Services",
+      "title": "Ce que nous",
+      "highlightedTitle": "Livrons",
+      "subtitle": "Des solutions logicielles complètes adaptées aux besoins de votre entreprise",
+      "serviceList": [
+        { "title": "Applications Web", "description": "Applications web évolutives et réactives, conçues avec des frameworks modernes pour une performance optimale." },
+        { "title": "Solutions Mobiles", "description": "Applications mobiles natives et multiplateformes offrant des expériences fluides sur iOS et Android." },
+        { "title": "Services Cloud", "description": "Infrastructure cloud robuste et services de migration pour faire évoluer votre entreprise en toute confiance." },
+        { "title": "Développement d'API", "description": "API RESTful et GraphQL conçues pour la performance, la sécurité et des intégrations tierces transparentes." },
+        { "title": "Solutions de Sécurité", "description": "Implémentations de sécurité de niveau entreprise pour protéger vos données et garantir la conformité." },
+        { "title": "Optimisation des Performances", "description": "Accélérez vos applications avec des techniques d'optimisation expertes pour de meilleurs temps de chargement." }
+      ]
+    },
+    "features": {
+      "badge": "Pourquoi nous choisir",
+      "title": "L'excellence dans chaque",
+      "highlightedTitle": "Ligne de Code",
+      "subtitle": "Nous ne nous contentons pas de créer des logiciels, nous concevons des expériences numériques qui stimulent la croissance et l'efficacité.",
+      "featureList": [
+        { "title": "Développement Agile", "description": "Approche itérative avec des boucles de rétroaction continues, garantissant flexibilité et livraison rapide." },
+        { "title": "Support 24/7", "description": "Support technique et surveillance 24h/24 pour que vos applications fonctionnent sans problème." },
+        { "title": "Architecture Évolutive", "description": "Solutions pérennes conçues pour la croissance. Notre architecture évolue de manière transparente avec votre entreprise." },
+        { "title": "Assurance Qualité", "description": "Processus de test rigoureux et revues de code pour garantir des logiciels fiables et sans bogues." }
+      ],
+      "floaters": {
+        "uptime": "99.9% Disponibilité",
+        "delivery": "Livraison Rapide"
+      }
+    },
+    "integrations": {
+      "badge": "Intégrations",
+      "title": "Connexions",
+      "highlightedTitle": "Transparentes",
+      "subtitle": "Nous nous intégrons avec les outils et plateformes que vous utilisez déjà",
+      "card1": {
+        "title": "API Tierces",
+        "description": "Connectez-vous aux passerelles de paiement, CRM, plateformes d'analyse, et plus encore. Nous gérons la complexité.",
+        "tags": ["Stripe", "Salesforce", "Google Analytics", "AWS"]
+      },
+      "card2": {
+        "title": "Plateformes E-commerce",
+        "description": "Créez de puissantes boutiques en ligne avec des intégrations transparentes aux plateformes populaires.",
+        "tags": ["Shopify", "WooCommerce", "PayPal", "Square"]
+      }
+    },
+    "stats": {
+      "title": "Des chiffres qui",
+      "highlightedTitle": "Parlent",
+      "subtitle": "Notre historique de livraison d'excellence",
+      "statList": [
+        { "value": "500+", "label": "Projets terminés" },
+        { "value": "98%", "label": "Satisfaction client" },
+        { "value": "50+", "label": "Membres experts" },
+        { "value": "24/7", "label": "Support disponible" }
+      ],
+      "badge": "Équipe certifiée et primée"
+    },
+    "footer": {
+      "description": "Créer des solutions logicielles innovantes qui permettent aux entreprises de prospérer à l'ère numérique.",
+      "rights": "Tous droits réservés.",
+      "sections": {
+        "services": {
+          "title": "Services",
+          "links": [
+            { "text": "Développement Web", "url": "#" },
+            { "text": "Applications Mobiles", "url": "#" },
+            { "text": "Solutions Cloud", "url": "#" },
+            { "text": "Développement d'API", "url": "#" },
+            { "text": "Conseil", "url": "#" }
+          ]
+        },
+        "company": {
+          "title": "Entreprise",
+          "links": [
+            { "text": "À propos de nous", "url": "#" },
+            { "text": "Notre équipe", "url": "#" },
+            { "text": "Carrières", "url": "#" },
+            { "text": "Blog", "url": "#" },
+            { "text": "Contact", "url": "#" }
+          ]
+        },
+        "contact": {
+          "title": "Contactez-nous"
+        }
+      },
+      "bottomBar": {
+        "privacy": "Politique de confidentialité",
+        "terms": "Conditions d'utilisation",
+        "cookies": "Politique de cookies"
+      }
+    }
+  }
+}

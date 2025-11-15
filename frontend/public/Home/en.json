@@ -1,0 +1,177 @@
+{
+    "home": {
+        "navbar": {
+            "services": "Services",
+            "features": "Features",
+            "integrations": "Integrations",
+            "stats": "Stats",
+            "getQuote": "Get a Quote"
+        },
+        "hero": {
+            "badge": "Innovative Software Solutions",
+            "title": "Transform Your Business with",
+            "highlightedTitle": "StayFi Solutions",
+            "subtitle": "We craft cutting-edge software applications that empower businesses to thrive in the digital age. From concept to deployment, we deliver excellence.",
+            "ctaButton": "Get Started",
+            "secondaryButton": "View Our Work",
+            "stats": [
+                {
+                    "value": "500+",
+                    "label": "Projects Delivered"
+                },
+                {
+                    "value": "98%",
+                    "label": "Client Satisfaction"
+                },
+                {
+                    "value": "50+",
+                    "label": "Team Experts"
+                }
+            ]
+        },
+        "services": {
+            "badge": "Our Services",
+            "title": "What We",
+            "highlightedTitle": "Deliver",
+            "subtitle": "Comprehensive software solutions tailored to your business needs",
+            "serviceList": [
+                {
+                    "title": "Web Applications",
+                    "description": "Scalable, responsive web apps built with modern frameworks and best practices for optimal performance."
+                },
+                {
+                    "title": "Mobile Solutions",
+                    "description": "Native and cross-platform mobile apps that deliver seamless experiences on iOS and Android devices."
+                },
+                {
+                    "title": "Cloud Services",
+                    "description": "Robust cloud infrastructure and migration services to scale your business with confidence and security."
+                },
+                {
+                    "title": "API Development",
+                    "description": "RESTful and GraphQL APIs designed for performance, security, and seamless third-party integrations."
+                },
+                {
+                    "title": "Security Solutions",
+                    "description": "Enterprise-grade security implementations to protect your data and ensure compliance with industry standards."
+                },
+                {
+                    "title": "Performance Optimization",
+                    "description": "Speed up your applications with expert optimization techniques for faster load times and better UX."
+                }
+            ]
+        },
+        "features": {
+            "badge": "Why Choose Us",
+            "title": "Excellence in Every",
+            "highlightedTitle": "Line of Code",
+            "subtitle": "We don't just build software—we craft digital experiences that drive growth, enhance efficiency, and deliver measurable results for your business.",
+            "featureList": [
+                {
+                    "title": "Agile Development",
+                    "description": "Iterative approach with continuous feedback loops, ensuring flexibility and rapid delivery of high-quality software."
+                },
+                {
+                    "title": "24/7 Support",
+                    "description": "Round-the-clock technical support and monitoring to keep your applications running smoothly."
+                },
+                {
+                    "title": "Scalable Architecture",
+                    "description": "Future-proof solutions designed with growth in mind. Our architecture scales seamlessly as your business expands."
+                },
+                {
+                    "title": "Quality Assurance",
+                    "description": "Rigorous testing processes and code reviews ensure bug-free, reliable software delivery. Quality is never compromised."
+                }
+            ],
+            "floaters": {
+                "uptime": "99.9% Uptime",
+                "delivery": "Fast Delivery"
+            }
+        },
+        "integrations": {
+            "badge": "Integrations",
+            "title": "Seamless",
+            "highlightedTitle": "Connections",
+            "subtitle": "We integrate with the tools and platforms you already use",
+            "card1": {
+                "title": "Third-Party APIs",
+                "description": "Connect with payment gateways, CRM systems, analytics platforms, and more. We handle the complexity.",
+                "tags": [
+                    "Stripe",
+                    "Salesforce",
+                    "Google Analytics",
+                    "AWS"
+                ]
+            },
+            "card2": {
+                "title": "E-commerce Platforms",
+                "description": "Build powerful online stores with seamless integrations to popular e-commerce platforms.",
+                "tags": [
+                    "Shopify",
+                    "WooCommerce",
+                    "PayPal",
+                    "Square"
+                ]
+            }
+        },
+        "stats": {
+            "title": "Numbers That",
+            "highlightedTitle": "Speak",
+            "subtitle": "Our track record of delivering excellence",
+            "statList": [
+                {
+                    "value": "500+",
+                    "label": "Projects Completed"
+                },
+                {
+                    "value": "98%",
+                    "label": "Client Satisfaction"
+                },
+                {
+                    "value": "50+",
+                    "label": "Expert Team Members"
+                },
+                {
+                    "value": "24/7",
+                    "label": "Support Available"
+                }
+            ],
+            "badge": "Certified & Award-Winning Team"
+        },
+        "footer": {
+      "description": "Crafting innovative software solutions that empower businesses to thrive in the digital age.",
+      "rights": "All rights reserved.",
+      "sections": {
+        "services": {
+          "title": "Services",
+          "links": [
+            { "text": "Web Development", "url": "#" },
+            { "text": "Mobile Apps", "url": "#" },
+            { "text": "Cloud Solutions", "url": "#" },
+            { "text": "API Development", "url": "#" },
+            { "text": "Consulting", "url": "#" }
+          ]
+        },
+        "company": {
+          "title": "Company",
+          "links": [
+            { "text": "About Us", "url": "#" },
+            { "text": "Our Team", "url": "#" },
+            { "text": "Careers", "url": "#" },
+            { "text": "Blog", "url": "#" },
+            { "text": "Contact", "url": "#" }
+          ]
+        },
+        "contact": {
+          "title": "Get in Touch"
+        }
+      },
+      "bottomBar": {
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "cookies": "Cookie Policy"
+      }
+    }
+  }
+}

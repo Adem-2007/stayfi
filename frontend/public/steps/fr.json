@@ -1,0 +1,372 @@
+{
+  "header": {
+    "appName": "StayFi",
+    "stepLabel": "Étape",
+    "of": "sur"
+  },
+  "userType": {
+    "title": "Bienvenue sur StayFi",
+    "helpText": "Ne vous inquiétez pas, vous pourrez toujours changer cela plus tard",
+    "subtitle": "Commençons avec votre projet",
+    "description": "Choisissez l'option qui vous décrit le mieux",
+    "company": {
+      "title": "Entreprise",
+      "description": "Je représente une entreprise ou une organisation"
+    },
+    "individual": {
+      "title": "Individuel",
+      "description": "Je travaille sur un projet personnel"
+    }
+  },
+  "customerInfo": {
+    "title": "Informations Personnelles",
+    "subtitle": "Parlez-nous de vous",
+    "name": "Nom Complet",
+    "whatsappNumber": "Numéro WhatsApp",
+    "namePlaceholder": "Jean Dupont",
+    "email": "Adresse Email",
+    "emailPlaceholder": "jean@exemple.com",
+    "phone": "Numéro de Téléphone",
+    "phonePlaceholder": "+33 6 12 34 56 78",
+    "country": "Pays",
+    "countryPlaceholder": "Sélectionnez votre pays",
+    "websiteUrl": "URL du Site Web",
+    "websiteUrlPlaceholder": "https://votresite.com",
+    "back": "Retour",
+    "continue": "Continuer",
+    "serviceDescription": "Description du Service",
+    "serviceDescriptionPlaceholder": "Décrivez le logiciel ou le service dont vous avez besoin...",
+    "serviceHelpText": "Parlez-nous de votre projet, de vos objectifs et de vos exigences spécifiques"
+  },
+  "companyInfo": {
+    "title": "Informations sur l'Entreprise",
+    "subtitle": "Parlez-nous de votre entreprise",
+    "companyName": "Nom de l'Entreprise",
+    "companyNamePlaceholder": "Acme Corporation",
+    "industry": "Secteur",
+    "industryPlaceholder": "Sélectionnez votre secteur",
+    "employeeCount": "Nombre d'Employés",
+    "employeeCountPlaceholder": "Sélectionnez le nombre d'employés",
+    "email": "Email de l'Entreprise",
+    "emailPlaceholder": "contact@entreprise.com",
+    "phone": "Numéro de Téléphone",
+    "phonePlaceholder": "+33 6 12 34 56 78",
+    "country": "Pays",
+    "countryPlaceholder": "Sélectionnez votre pays",
+    "websiteUrl": "URL du Site Web",
+    "websiteUrlPlaceholder": "https://entreprise.com",
+    "back": "Retour",
+    "businessAddress": "Adresse de l'Entreprise",
+    "businessAddressPlaceholder": "Entrez l'adresse de votre entreprise",
+    "continue": "Continuer"
+  },
+  "emailVerification": {
+    "title": "Vérification de l'Email",
+    "subtitle": "Nous avons envoyé un code de vérification à",
+    "description": "Veuillez entrer le code à 6 chiffres pour continuer",
+    "codePlaceholder": "Entrez le code à 6 chiffres",
+    "resend": "Renvoyer le Code",
+    "verify": "Vérifier et Continuer",
+    "sending": "Envoi en cours...",
+    "noCodeReceived": "Vous n'avez pas reçu le code ?",
+    "resendIn": "Renvoyer le code dans",
+    "spamTitle": "Vérifiez votre dossier de spam",
+    "spamDescription": "Si vous ne voyez pas l'e-mail dans votre boîte de réception, veuillez vérifier votre dossier de spam ou de courrier indésirable. Le code expire dans 10 minutes.",
+    "successMessage": "Email vérifié avec succès !",
+    "verifying": "Vérification en cours..."
+  },
+  "projectDescription": {
+    "title": "Description du Projet",
+    "subtitle": "Parlez-nous des objectifs de votre projet",
+    "principalGoal": "Quel est votre objectif principal?",
+    "principalGoalPlaceholder": "Décrivez votre objectif principal...",
+    "principalGoalHelpText": "Décrivez l'objectif commercial principal ou le résultat que vous visez",
+    "currentProblem": "Quel problème essayez-vous de résoudre?",
+    "currentProblemPlaceholder": "Décrivez le défi...",
+    "currentProblemHelpText": "Expliquez les défis ou les inefficacités que vous rencontrez",
+    "targetAudience": "Qui est votre public cible?",
+    "targetAudiencePlaceholder": "Décrivez vos utilisateurs cibles...",
+    "targetAudienceHelpText": "Comprendre votre public nous aide à concevoir la solution parfaite",
+    "projectGoal": "Quel est l'objectif de votre projet?",
+    "projectGoalPlaceholder": "Décrivez ce que vous voulez accomplir...",
+    "problemsToSolve": "Quels problèmes voulez-vous résoudre?",
+    "problemsToSolvePlaceholder": "Décrivez les problèmes...",
+    "back": "Retour",
+    "continue": "Continuer"
+  },
+  "platformSelection": {
+    "title": "Choisissez Votre",
+    "highlightedTitle": "Plateforme",
+    "subtitle": "Sélectionnez toutes les plateformes dont vous avez besoin pour votre projet",
+    "back": "Retour",
+    "continue": "Continuer à l'Étape Suivante",
+    "mobileName": "Application Mobile",
+    "mobileDesc": "Applications iOS et Android",
+    "desktopName": "Application de Bureau",
+    "desktopDesc": "Windows, Mac, Linux",
+    "websiteName": "Site Web",
+    "websiteDesc": "Application ou site web",
+    "otherName": "Autre",
+    "otherDesc": "Spécifiez votre plateforme",
+    "otherLabel": "Spécifiez Votre Plateforme",
+    "otherPlaceholder": "Ex: App Smart TV, Appareil IoT, Extension de Navigateur...",
+    "errorSelectOne": "Veuillez sélectionner au moins une plateforme",
+    "errorSpecifyOther": "Veuillez spécifier votre plateforme",
+    "infoBoxTitle": "Plusieurs Plateformes ?",
+    "infoBoxText": "Vous pouvez sélectionner plusieurs plateformes si votre projet nécessite un développement multiplateforme. Nous adapterons notre solution pour qu'elle fonctionne de manière transparente sur toutes les plateformes choisies."
+  },
+  "siteRequirements": {
+    "title": "Exigences",
+    "highlightedTitle": "Techniques",
+    "subtitle": "Définissez les spécifications techniques de votre projet",
+    "back": "Retour",
+    "continue": "Continuer vers Sécurité & Paiement",
+    "pages": {
+      "title": "Pages & Écrans",
+      "label": "Sélectionnez les pages dont vous avez besoin",
+      "otherLabel": "Spécifier d'autres pages",
+      "otherPlaceholder": "Ex: Portfolio, Témoignages, Équipe...",
+      "options": [
+        { "id": "home", "name": "Page d'accueil", "description": "Page de destination" },
+        { "id": "about", "name": "À propos", "description": "Infos sur l'entreprise" },
+        { "id": "contact", "name": "Contact", "description": "Formulaire de contact" },
+        { "id": "services", "name": "Services", "description": "Liste des services" },
+        { "id": "pricing", "name": "Tarifs", "description": "Plans et tarifs" },
+        { "id": "blog", "name": "Blog", "description": "Articles et actualités" },
+        { "id": "faq", "name": "FAQ", "description": "Questions fréquentes" },
+        { "id": "dashboard", "name": "Tableau de bord", "description": "Panneau utilisateur" },
+        { "id": "profile", "name": "Profil", "description": "Profil utilisateur" },
+        { "id": "settings", "name": "Paramètres", "description": "Paramètres de l'app" },
+        { "id": "auth", "name": "Authentification", "description": "Connexion/Inscription" },
+        { "id": "checkout", "name": "Paiement", "description": "Processus de paiement" },
+        { "id": "other-page", "name": "Autre", "description": "Spécifier ci-dessous" }
+      ]
+    },
+    "features": {
+      "title": "Fonctionnalités Additionnelles",
+      "label": "Sélectionnez les fonctionnalités à inclure",
+      "otherLabel": "Spécifier d'autres fonctionnalités",
+      "otherPlaceholder": "Ex: Streaming vidéo, Collaboration en temps réel...",
+      "options": [
+        { "id": "notifications", "name": "Notifications Push", "description": "Alertes en temps réel" },
+        { "id": "multilang", "name": "Multilingue", "description": "Support i18n" },
+        { "id": "darkmode", "name": "Mode Sombre", "description": "Changement de thème" },
+        { "id": "search", "name": "Recherche", "description": "Recherche de contenu" },
+        { "id": "chat", "name": "Chat en direct", "description": "Support client" },
+        { "id": "analytics", "name": "Analytique", "description": "Suivi d'utilisation" },
+        { "id": "payment", "name": "Passerelle de paiement", "description": "Paiements en ligne" },
+        { "id": "social", "name": "Connexion sociale", "description": "Intégration OAuth" },
+        { "id": "export", "name": "Exportation de données", "description": "Export PDF/CSV" },
+        { "id": "calendar", "name": "Calendrier", "description": "Planification d'événements" },
+        { "id": "maps", "name": "Intégration de cartes", "description": "Services de localisation" },
+        { "id": "email", "name": "Service d'e-mails", "description": "E-mails automatisés" },
+        { "id": "other-feature", "name": "Autre", "description": "Spécifier ci-dessous" }
+      ]
+    },
+    "design": {
+      "title": "Préférences de Design",
+      "upload": "Téléverser un design",
+      "uploadDesc": "Images ou maquettes",
+      "describe": "Décrire le design",
+      "describeDesc": "Description textuelle",
+      "share": "Partager un lien",
+      "shareDesc": "Figma, Adobe XD",
+      "uploadLabel": "Téléverser les fichiers de design",
+      "describeLabel": "Décrivez votre vision du design",
+      "describePlaceholder": "Décrivez les couleurs, la mise en page, le style...",
+      "urlLabel": "URL du fichier de design",
+      "urlPlaceholder": "https://figma.com/file/..."
+    },
+    "techStack": {
+      "title": "Pile Technologique",
+      "frontendLabel": "Technologies Frontend",
+      "otherFrontendLabel": "Spécifier les technologies Frontend",
+      "otherFrontendPlaceholder": "Ex: Vue.js, Angular, Next.js...",
+      "backendLabel": "Technologies Backend",
+      "otherBackendLabel": "Spécifier les technologies Backend",
+      "otherBackendPlaceholder": "Ex: Python, Java, Go...",
+      "website": [
+        { "id": "react", "name": "React", "description": "Bibliothèque populaire" },
+        { "id": "svelte", "name": "Svelte", "description": "Rapide & moderne" },
+        { "id": "tailwind", "name": "Tailwind CSS", "description": "CSS utilitaire" },
+        { "id": "css", "name": "CSS Personnalisé", "description": "CSS pur" }
+      ],
+      "mobile": [
+        { "id": "react-native", "name": "React Native", "description": "Multiplateforme" },
+        { "id": "flutter", "name": "Flutter", "description": "Framework de Google" }
+      ],
+      "desktop": [
+        { "id": "electron", "name": "Electron", "description": "Multiplateforme" },
+        { "id": "rust-tauri", "name": "Rust (Tauri)", "description": "Performance native" }
+      ],
+      "backend": [
+        { "id": "node", "name": "Node.js", "description": "Runtime JavaScript" },
+        { "id": "rust", "name": "Rust", "description": "Haute performance" }
+      ],
+      "otherFrontend": { "id": "other-frontend", "name": "Autre", "description": "Spécifier ci-dessous" },
+      "otherBackend": { "id": "other-backend", "name": "Autre", "description": "Spécifier ci-dessous" }
+    },
+    "verificationDb": {
+      "verificationTitle": "Vérification Utilisateur",
+      "databaseTitle": "Base de Données",
+      "otherDatabaseLabel": "Spécifier d'autres bases de données",
+      "otherDatabasePlaceholder": "Ex: Redis, Cassandra, Firebase...",
+      "verificationOptions": [
+        { "id": "email", "name": "Vérification par e-mail", "description": "Via e-mail" },
+        { "id": "sms", "name": "Vérification par SMS", "description": "Via téléphone" },
+        { "id": "both", "name": "Les deux", "description": "E-mail & SMS" }
+      ],
+      "databaseOptions": [
+        { "id": "mongodb", "name": "MongoDB", "description": "Base de données NoSQL" },
+        { "id": "postgresql", "name": "PostgreSQL", "description": "BD relationnelle" },
+        { "id": "mysql", "name": "MySQL", "description": "BD SQL populaire" },
+        { "id": "other-db", "name": "Autre", "description": "Spécifier ci-dessous" }
+      ]
+    },
+    "hostingAi": {
+      "hostingTitle": "Préférence d'Hébergement",
+      "hostingPlaceholder": "Sélectionner une option d'hébergement",
+      "otherHostingLabel": "Spécifier l'hébergement",
+      "otherHostingPlaceholder": "Ex: Heroku, DigitalOcean...",
+      "aiTitle": "Intégration IA",
+      "aiFeatures": "Implémenter des fonctionnalités IA",
+      "aiFeaturesDesc": "Ajoutez des capacités IA à votre application",
+      "aiAutomation": "Automatisation par IA",
+      "aiAutomationDesc": "Automatisez des processus avec l'IA",
+      "hostingOptions": ["VPS", "Cloud (AWS/Azure/GCP)", "Autre"]
+    },
+    "validation": {
+        "selectAtLeastOne": "Veuillez sélectionner au moins une option",
+        "specify": "Ce champ est requis"
+    }
+  },
+  "securityPayment": {
+    "title": "Sécurité &",
+    "highlightedTitle": "Paiement",
+    "subtitle": "Configurez les mesures de sécurité et les options de paiement",
+    "back": "Retour",
+    "continue": "Continuer vers le Résumé",
+    "validation": {
+      "selectSecurityLevel": "Veuillez sélectionner un niveau de sécurité",
+      "specifyPayment": "Veuillez spécifier votre méthode de paiement"
+    },
+    "recaptcha": {
+      "title": "Activer reCAPTCHA",
+      "recommendation": "Recommandé",
+      "description": "Protégez votre application contre le spam et les abus avec Google reCAPTCHA. Cela ajoute une couche de sécurité supplémentaire aux formulaires et empêche les attaques de bots automatisés.",
+      "benefitsTitle": "Avantages :",
+      "benefitsText": "Empêche les soumissions de spam, protège contre les attaques par force brute, améliore la sécurité globale et maintient l'expérience utilisateur avec une vérification invisible."
+    },
+    "securityLevels": {
+      "title": "Niveau de Sécurité",
+      "subtitle": "Choisissez le niveau de sécurité pour votre application",
+      "levels": [
+        { "id": "easy", "name": "Basique", "description": "Mesures de sécurité standard", "features": ["Certificat SSL", "Cryptage des mots de passe", "Validation de base"] },
+        { "id": "medium", "name": "Améliorée", "description": "Protection avancée", "features": ["Toutes les fonctionnalités de base", "Authentification à deux facteurs", "Gestion de session", "Blocage d'IP"] },
+        { "id": "hard", "name": "Maximum", "description": "Sécurité de niveau entreprise", "features": ["Toutes les fonctionnalités améliorées", "Cryptage avancé", "Audits de sécurité", "Protection DDoS", "Tests d'intrusion"] }
+      ]
+    },
+    "paymentMethods": {
+      "title": "Méthodes de Paiement",
+      "subtitle": "Sélectionnez les options de paiement pour votre application (Optionnel)",
+      "otherLabel": "Spécifier la méthode de paiement",
+      "otherPlaceholder": "Ex: Virement bancaire, Paiement mobile...",
+      "methods": [
+        { "id": "stripe", "name": "Stripe", "description": "Cartes de crédit/débit" },
+        { "id": "paypal", "name": "PayPal", "description": "Paiements PayPal" },
+        { "id": "crypto", "name": "Cryptomonnaie", "description": "Bitcoin, Ethereum" },
+        { "id": "algeria-post", "name": "Algérie Poste (CCP)", "description": "Service postal algérien" },
+        { "id": "other-payment", "name": "Autre", "description": "Spécifier ci-dessous" }
+      ]
+    }
+  },
+  "summary": {
+    "title": "Résumé de la Demande",
+    "subtitle": "Vérifiez les détails de votre projet avant la soumission",
+    "backToEdit": "Retourner à l'édition",
+    "submit": "Soumettre la Demande",
+    "submitting": "Soumission...",
+    "sections": {
+      "applicant": {
+        "title": "Informations du Demandeur",
+        "submittedBy": "Cette demande a été soumise par",
+        "companyIntro": "une entreprise opérant dans le secteur {industry} avec une équipe de {employeeCount} employés.",
+        "individualIntro": "un particulier recherchant des services de développement logiciel.",
+        "contactEmail": "Email de contact",
+        "phone": "Numéro de téléphone",
+        "country": "Pays",
+        "website": "Site Web"
+      },
+      "project": {
+        "title": "Aperçu du Projet",
+        "principalGoal": "Objectif Principal",
+        "currentChallenge": "Défi Actuel",
+        "targetAudience": "Public Cible",
+        "projectGoal": "Objectif du Projet",
+        "problemsToSolve": "Problèmes à Résoudre"
+      },
+      "tech": {
+        "title": "Spécifications Techniques",
+        "platforms": "Plateformes Requises",
+        "platformsDesc": "L'application sera développée pour les plateformes suivantes :",
+        "stack": "Pile Technologique",
+        "frontend": "Technologies Frontend :",
+        "backend": "Technologies Backend :",
+        "database": "Base de Données :",
+        "hostingInfra": "Hébergement & Infrastructure",
+        "hosting": "Hébergement :",
+        "ai": "Intégration IA",
+        "aiFeatures": "Fonctionnalités IA :",
+        "aiAutomation": "Automatisation IA :",
+        "enabled": "Activé",
+        "notIncluded": "Non inclus"
+      },
+      "security": {
+        "title": "Configuration Sécurité & Paiement",
+        "measures": "Mesures de Sécurité",
+        "measuresDesc": "L'application mettra en œuvre un niveau de sécurité {securityLevel}, {recaptchaStatus} la protection reCAPTCHA pour les formulaires.",
+        "withRecaptcha": "incluant",
+        "withoutRecaptcha": "sans",
+        "payment": "Intégration des Paiements",
+        "paymentDesc": "Les méthodes de paiement suivantes seront intégrées :"
+      },
+      "conclusion": "Ce résumé de demande représente les exigences et spécifications complètes pour le projet proposé. Toutes les informations fournies seront utilisées pour créer une proposition de projet détaillée et un calendrier."
+    },
+    "modal": {
+      "title": "Merci !",
+      "subtitle": "Nous avons bien reçu votre demande et nous vous contacterons bientôt.",
+      "confirmation": "Confirmation par E-mail",
+      "sentTo": "Envoyé à {email}",
+      "responseTime": "Délai de Réponse",
+      "withinHours": "Sous 24-48 heures",
+      "nextSteps": "Prochaines Étapes",
+      "proposal": "Proposition détaillée et calendrier",
+      "refNumber": "Numéro de Référence",
+      "close": "Fermer"
+    },
+    "common": {
+      "edit": "Modifier",
+      "notSpecified": "Non spécifié",
+      "na": "N/A"
+    }
+  },
+  "validation": {
+    "required": "Ce champ est requis",
+    "email": "Veuillez entrer une adresse email valide",
+    "phone": "Veuillez entrer un numéro de téléphone valide",
+    "url": "Veuillez entrer une URL valide",
+    "minLength": "La longueur minimale est de {min} caractères",
+    "selectAtLeastOne": "Veuillez sélectionner au moins une option"
+  },
+  "common": {
+    "optional": "Optionnel",
+    "add": "Ajouter",
+    "noOptionsFound": "Aucune option trouvée",
+    "search": "Rechercher..."
+  },
+  "fileUpload": {
+    "upload": "Télécharger des fichiers",
+    "dragAndDrop": "ou glisser-déposer",
+    "fileTypes": "PNG, JPG, GIF jusqu'à 10 Mo"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "header": {
+    "title": "لوحة التحكم",
+    "subtitle": "إدارة مشاريعك وخطواتك",
+    "backToApp": "العودة إلى التطبيق"
+  },
+  "sidebar": {
+    "title": "لوحة التحكم",
+    "steps": "الخطوات",
+    "companyProjects": "مشاريع الشركات",
+    "customerProjects": "مشاريع العملاء",
+    "backToApp": "العودة إلى التطبيق",
+    "logout": "تسجيل الخروج"
+  },
+  "companyProjects": {
+    "title": "مشاريع الشركات",
+    "subtitle": "عرض وإدارة طلبات مشاريع الشركات",
+    "noProjects": "لا توجد مشاريع شركات",
+    "noProjectsDesc": "ستظهر طلبات مشاريع الشركات هنا",
+    "viewDetails": "عرض التفاصيل"
+  },
+  "customerProjects": {
+    "title": "مشاريع العملاء",
+    "subtitle": "عرض وإدارة طلبات مشاريع العملاء",
+    "noProjects": "لا توجد مشاريع عملاء",
+    "noProjectsDesc": "ستظهر طلبات مشاريع العملاء هنا",
+    "viewDetails": "عرض التفاصيل"
+  },
+  "projectDetails": {
+    "title": "تفاصيل المشروع",
+    "basicInfo": "المعلومات الأساسية",
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "status": "الحالة",
+    "projectGoal": "هدف المشروع",
+    "industry": "الصناعة",
+    "companySize": "حجم الشركة",
+    "platforms": "المنصات",
+    "pages": "الصفحات",
+    "features": "الميزات",
+    "design": "التصميم",
+    "designOption": "خيار التصميم",
+    "designDescription": "الوصف",
+    "designUrl": "رابط المرجع",
+    "techStack": "التقنيات المستخدمة",
+    "frontend": "الواجهة الأمامية",
+    "backend": "الواجهة الخلفية",
+    "database": "قاعدة البيانات",
+    "hostingAi": "الاستضافة والذكاء الاصطناعي",
+    "hosting": "الاستضافة",
+    "aiImplementation": "تطبيق الذكاء الاصطناعي",
+    "securityPayment": "الأمان والدفع",
+    "securityLevel": "مستوى الأمان",
+    "paymentMethod": "طريقة الدفع",
+    "yes": "نعم",
+    "no": "لا",
+    "close": "إغلاق"
+  },
+  "buttons": {
+    "createNew": "إنشاء خطوة جديدة",
+    "addField": "إضافة حقل",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "back": "رجوع",
+    "continue": "متابعة",
+    "saveStep": "حفظ الخطوة",
+    "saveField": "حفظ الحقل",
+    "addOption": "إضافة خيار",
+    "remove": "إزالة"
+  },
+  "stepBuilder": {
+    "titleEdit": "تعديل الخطوة",
+    "titleCreate": "إنشاء خطوة جديدة",
+    "subtitle": "حدد خطوتك المخصصة مع دعم متعدد اللغات",
+    "stepTitle": "العنوان",
+    "stepSubtitle": "العنوان الفرعي",
+    "stepOrder": "ترتيب الخطوة",
+    "stepOrderHelp": "الأرقام الأقل تظهر أولاً (0 = بعد الخطوات الافتراضية)",
+    "formFields": "حقول النموذج",
+    "noFields": "لم تتم إضافة حقول بعد",
+    "noFieldsDesc": "انقر على \"إضافة حقل\" لإنشاء حقلك الأول",
+    "required": "مطلوب",
+    "enterStepTitle": "أدخل عنوان الخطوة",
+    "enterStepSubtitle": "أدخل العنوان الفرعي للخطوة (اختياري)",
+    "placeholderPreview": "نص العنصر النائب"
+  },
+  "fieldEditor": {
+    "titleEdit": "تعديل الحقل",
+    "titleCreate": "إضافة حقل جديد",
+    "subtitle": "تكوين خصائص الحقل والترجمات",
+    "fieldType": "نوع الحقل",
+    "inputType": "نوع الإدخال",
+    "label": "التسمية",
+    "placeholder": "نص العنصر النائب",
+    "helpText": "نص المساعدة",
+    "requiredField": "حقل مطلوب",
+    "requiredFieldDesc": "يجب على المستخدم ملء هذا الحقل للمتابعة",
+    "options": "الخيارات",
+    "addedOptions": "الخيارات المضافة:",
+    "noOptions": "لم تتم إضافة خيارات بعد",
+    "searchable": "قابل للبحث",
+    "searchableDesc": "السماح للمستخدمين بالبحث في الخيارات",
+    "enterOption": "أدخل الخيار في",
+    "enterLabel": "أدخل تسمية الحقل",
+    "enterPlaceholder": "أدخل نص العنصر النائب (اختياري)",
+    "enterHelpText": "أدخل نص المساعدة (اختياري)"
+  },
+  "fieldTypes": {
+    "input": "إدخال",
+    "inputDesc": "نص سطر واحد",
+    "textarea": "منطقة نصية",
+    "textareaDesc": "نص متعدد الأسطر",
+    "dropdown": "قائمة منسدلة",
+    "dropdownDesc": "اختر خياراً واحداً",
+    "multiselect": "اختيار متعدد",
+    "multiselectDesc": "اختر عدة خيارات"
+  },
+  "inputTypes": {
+    "text": "نص",
+    "email": "بريد إلكتروني",
+    "tel": "هاتف",
+    "url": "رابط",
+    "number": "رقم",
+    "date": "تاريخ"
+  },
+  "stepsList": {
+    "title": "الخطوات المخصصة",
+    "step": "خطوة",
+    "steps": "خطوات",
+    "noSteps": "لا توجد خطوات مخصصة بعد",
+    "noStepsDesc": "أنشئ خطوتك المخصصة الأولى للبدء",
+    "order": "الترتيب",
+    "field": "حقل",
+    "fields": "حقول",
+    "fieldsPreview": "الحقول:"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "ar": "العربية"
+  },
+  "validation": {
+    "fillAllLanguages": "يرجى ملء التسمية لجميع اللغات",
+    "addOneOption": "يرجى إضافة خيار واحد على الأقل",
+    "fillOptionAllLanguages": "يرجى ملء الخيار لجميع اللغات"
+  },
+  "confirm": {
+    "deleteField": "حذف هذا الحقل؟",
+    "deleteStep": "هل أنت متأكد من رغبتك في حذف هذه الخطوة؟"
+  }
+}
