@@ -1,17 +1,15 @@
 const nodemailer = require('nodemailer');
 
 // Create email transporter
-const createTransporter = () => {
-  return nodemailer.createTransporter({
-    host: process.env.EMAIL_HOST,
-    port: process.env.EMAIL_PORT,
-    secure: false,
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASSWORD
-    }
-  });
-};
+const transporter = nodemailer.createTransport({
+  host: process.env.EMAIL_HOST,
+  port: process.env.EMAIL_PORT,
+  secure: false,
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASSWORD
+  }
+});
 
 // Handle contact form submission
 exports.submitContactForm = async (req, res) => {
@@ -43,7 +41,7 @@ exports.submitContactForm = async (req, res) => {
       });
     }
 
-    const transporter = createTransporter();
+
 
     // Email to admin
     const adminMailOptions = {

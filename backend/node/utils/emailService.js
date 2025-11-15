@@ -116,6 +116,53 @@ class EmailService {
   }
 
   static async sendSubmissionEmail(formData, submissionId, pdfPath) {
+    // Prepare attachments array
+    const attachments = [
+      {
+        filename: `application-${submissionId}.pdf`,
+        path: pdfPath
+      }
+    ];
+
+    // Add design files (images and PDFs) as attachments
+    if (formData.designFiles && Array.isArray(formData.designFiles)) {
+      formData.designFiles.forEach((file, index) => {
+        if (file && typeof file === 'string' && file.startsWith('data:')) {
+          // Extract mime type and base64 data for images
+          const imageMatches = file.match(/^data:image\/([a-zA-Z]+);base64,(.+)$/);
+          if (imageMatches && imageMatches.length === 3) {
+            const mimeType = imageMatches[1]; // e.g., 'png', 'jpeg', 'jpg'
+            const base64Data = imageMatches[2];
+            
+            attachments.push({
+              filename: `design-${index + 1}.${mimeType}`,
+              content: base64Data,
+              encoding: 'base64',
+              contentType: `image/${mimeType}`
+            });
+          }
+          
+          // Extract mime type and base64 data for PDFs
+          const pdfMatches = file.match(/^data:application\/pdf;base64,(.+)$/);
+          if (pdfMatches && pdfMatches.length === 2) {
+            const base64Data = pdfMatches[1];
+            
+            attachments.push({
+              filename: `design-${index + 1}.pdf`,
+              content: base64Data,
+              encoding: 'base64',
+              contentType: 'application/pdf'
+            });
+          }
+        }
+      });
+    }
+
+    const designFilesCount = formData.designFiles ? formData.designFiles.length : 0;
+    const designFilesText = designFilesCount > 0 
+      ? `<br><strong>Design Files:</strong> ${designFilesCount} file(s) attached` 
+      : '';
+
     const mailOptions = {
       from: process.env.EMAIL_FROM,
       to: process.env.EMAIL_USER,
@@ -147,10 +194,10 @@ class EmailService {
                 <strong>Applicant:</strong> ${formData.name || formData.companyName}<br>
                 <strong>Email:</strong> ${formData.email}<br>
                 <strong>Type:</strong> ${formData.userType === 'company' ? 'Company' : 'Individual'}<br>
-                <strong>Date:</strong> ${new Date().toLocaleString()}
+                <strong>Date:</strong> ${new Date().toLocaleString()}${designFilesText}
               </div>
               
-              <p>Please find the complete application summary attached as a PDF.</p>
+              <p>Please find the complete application summary attached as a PDF${designFilesCount > 0 ? ', along with the design files (images/mockups)' : ''}.</p>
               
               <div class="footer">
                 <p>© 2024 StayFi. All rights reserved.</p>
@@ -160,12 +207,7 @@ class EmailService {
         </body>
         </html>
       `,
-      attachments: [
-        {
-          filename: `application-${submissionId}.pdf`,
-          path: pdfPath
-        }
-      ]
+      attachments: attachments
     };
 
     return await transporter.sendMail(mailOptions);

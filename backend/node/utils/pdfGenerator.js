@@ -105,6 +105,36 @@ class PDFGenerator {
     if (formData.paymentMethods && formData.paymentMethods.length > 0) {
       doc.text(`Payment Methods: ${formData.paymentMethods.join(', ')}`);
     }
+    doc.moveDown(1.5);
+
+    // Section 5: Design Information
+    if (formData.designFiles && formData.designFiles.length > 0) {
+      doc.fontSize(16).fillColor('#111827').text('5. Design Files');
+      doc.moveDown(0.5);
+      doc.fontSize(11).fillColor('#374151');
+      doc.text(`Number of design files attached: ${formData.designFiles.length}`);
+      doc.text('(See attached image files in email)');
+      doc.moveDown(1);
+    }
+    
+    // Design Description
+    if (formData.designDescription) {
+      if (!formData.designFiles || formData.designFiles.length === 0) {
+        doc.fontSize(16).fillColor('#111827').text('5. Design Description');
+      } else {
+        doc.fontSize(12).fillColor('#1f2937').text('Design Description:', { continued: false });
+      }
+      doc.moveDown(0.5);
+      doc.fontSize(11).fillColor('#374151').text(formData.designDescription, { align: 'left' });
+      doc.moveDown(1);
+    }
+    
+    // Design URL
+    if (formData.designUrl) {
+      doc.fontSize(12).fillColor('#1f2937').text('Design File URL:', { continued: false });
+      doc.fontSize(11).fillColor('#2563eb').text(formData.designUrl, { link: formData.designUrl });
+      doc.moveDown(1);
+    }
     
     // Footer
     doc.moveDown(2);

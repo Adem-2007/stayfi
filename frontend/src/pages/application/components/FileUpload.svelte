@@ -9,14 +9,33 @@
   
   let dragOver = false;
   
-  function handleFiles(fileList) {
-    const newFiles = Array.from(fileList).map(file => ({
-      file,
-      name: file.name,
-      size: file.size,
-      preview: URL.createObjectURL(file)
-    }));
-    files = [...files, ...newFiles];
+  async function handleFiles(fileList) {
+    const fileArray = Array.from(fileList);
+    
+    for (const file of fileArray) {
+      // Create preview URL for display
+      const preview = URL.createObjectURL(file);
+      
+      // Convert file to base64 for backend submission
+      const base64 = await fileToBase64(file);
+      
+      files = [...files, {
+        file,
+        name: file.name,
+        size: file.size,
+        preview: preview,
+        base64: base64 // Store base64 for submission
+      }];
+    }
+  }
+  
+  function fileToBase64(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
   }
   
   function handleDrop(e) {
@@ -78,7 +97,15 @@
     <div class="mt-4 space-y-2">
       {#each files as file, index}
         <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg border border-gray-200">
-          <img src={file.preview} alt={file.name} class="w-12 h-12 object-cover rounded" />
+          {#if file.file.type.startsWith('image/')}
+            <img src={file.preview} alt={file.name} class="w-12 h-12 object-cover rounded" />
+          {:else}
+            <div class="w-12 h-12 bg-gray-200 rounded flex items-center justify-center">
+              <svg class="w-6 h-6 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd" />
+              </svg>
+            </div>
+          {/if}
           <div class="flex-1 min-w-0">
             <p class="text-sm font-medium text-gray-900 truncate">{file.name}</p>
             <p class="text-xs text-gray-500">{formatFileSize(file.size)}</p>

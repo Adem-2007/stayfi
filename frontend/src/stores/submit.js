@@ -12,10 +12,21 @@ function getAuthHeaders() {
 
 // Submit application
 export async function submitApplication(formData) {
+  // Prepare form data for submission - convert file objects to base64
+  const preparedFormData = { ...formData };
+  
+  // Convert designFiles array to only include base64 data
+  if (preparedFormData.designFiles && Array.isArray(preparedFormData.designFiles)) {
+    preparedFormData.designFiles = preparedFormData.designFiles.map(file => {
+      // If file has base64 property, use it; otherwise keep as is
+      return file.base64 || file;
+    });
+  }
+  
   const response = await fetch(API_ENDPOINTS.SUBMIT_APPLICATION, {
     method: 'POST',
     headers: getAuthHeaders(),
-    body: JSON.stringify({ formData })
+    body: JSON.stringify({ formData: preparedFormData })
   });
 
   const contentType = response.headers.get('content-type');
