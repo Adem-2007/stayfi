@@ -2,7 +2,7 @@
   import { writable } from 'svelte/store';
   import { onMount } from 'svelte';
   // Correctly import all necessary stores, including the new 'direction'
-  import { currentLanguage, translations, loadTranslations, direction } from '../../stores/language.js';
+  import { currentLanguage, translations, loadTranslations, direction } from '../../stores/language';
   import { customSteps, loadCustomSteps } from '../../stores/customSteps.js';
   import SelectUserType from './shared/SelectUserType.svelte';
   import CompanyInformation from './company/steps/CompanyInformation.svelte';

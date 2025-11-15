@@ -5,6 +5,7 @@ require('dotenv').config();
 const connectDB = require('./config/database');
 const authRoutes = require('./routes/authRoutes');
 const verificationRoutes = require('./routes/verificationRoutes');
+const contactRoutes = require('./routes/contact');
 const authMiddleware = require('./middleware/authMiddleware');
 
 const app = express();
@@ -20,6 +21,7 @@ app.use(express.json());
 // Public Routes (no authentication required)
 app.use('/api/auth', authRoutes);
 app.use('/api', verificationRoutes);
+app.use('/api/contact', contactRoutes);
 
 // Submission routes - split public and protected
 const SubmissionController = require('./controllers/submissionController');
@@ -60,6 +62,7 @@ app.listen(PORT, () => {
   console.log('  POST /api/send-verification');
   console.log('  POST /api/verify-code');
   console.log('  POST /api/submit-application');
+  console.log('  POST /api/contact');
   console.log('  GET  /api/health');
   console.log('\n🔒 Protected routes (require authentication):');
   console.log('  GET  /api/submissions');

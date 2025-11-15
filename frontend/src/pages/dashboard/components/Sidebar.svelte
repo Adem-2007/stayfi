@@ -51,7 +51,9 @@
 
 <!-- Sidebar -->
 <aside 
-  class="fixed top-0 {$dashboardDirection === 'rtl' ? 'right-0' : 'left-0'} h-full bg-white shadow-xl z-50 transition-transform duration-300 ease-in-out {isOpen ? 'translate-x-0' : ($dashboardDirection === 'rtl' ? 'translate-x-full' : '-translate-x-full')} w-64 lg:translate-x-0"
+  class="fixed top-0 {$dashboardDirection === 'rtl' ? 'right-0' : 'left-0'} h-full bg-white shadow-xl z-50 transition-transform duration-300 ease-in-out w-64
+  {isOpen ? 'translate-x-0' : ($dashboardDirection === 'rtl' ? 'translate-x-full' : '-translate-x-full')} 
+  lg:translate-x-0"
   dir={$dashboardDirection}
 >
   <!-- Sidebar Header -->

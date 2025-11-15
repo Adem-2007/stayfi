@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import { auth } from '../../../stores/auth.js';
+  import { getSubmissions } from '../../../stores/submit.js';
   import { dashboardTranslations, dashboardDirection } from '../../../stores/dashboardLanguage.js';
   import ProjectDetailsModal from '../components/ProjectDetailsModal.svelte';
   
@@ -11,29 +11,15 @@
   
   onMount(async () => {
     try {
-      const token = auth.getToken();
-      const API_URL = 'http://localhost:3001/api/submissions?userType=company';
+      const data = await getSubmissions('company');
       
-      const response = await fetch(API_URL, {
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
-        }
-      });
-      
-      // Check if response is JSON
-      const contentType = response.headers.get('content-type');
-      if (contentType && contentType.includes('application/json')) {
-        const data = await response.json();
-        
-        if (data.success) {
-          projects = data.submissions.map(sub => ({
-            ...sub,
-            companyName: sub.formData?.companyName || 'N/A',
-            projectType: sub.formData?.platforms?.join(', ') || 'N/A',
-            createdAt: new Date(sub.submittedAt).toLocaleDateString()
-          }));
-        }
+      if (data.success) {
+        projects = data.submissions.map(sub => ({
+          ...sub,
+          companyName: sub.formData?.companyName || 'N/A',
+          projectType: sub.formData?.platforms?.join(', ') || 'N/A',
+          createdAt: new Date(sub.submittedAt).toLocaleDateString()
+        }));
       }
     } catch (error) {
       console.error('Error fetching company projects:', error);

@@ -1,12 +1,47 @@
 <script>
   import { createEventDispatcher } from 'svelte';
   // Import both translations and the new direction store
-  import { translations, direction } from '../../../../stores/language.js';
+  import { translations, direction, currentLanguage } from '../../../../stores/language.js';
   import Input from '../../components/Input.svelte';
   import Dropdown from '../../components/Dropdown.svelte';
   import TextArea from '../../components/TextArea.svelte';
-  import countries from '../../../../data/countries.json';
-  import industries from '../../../../data/industries.json';
+  
+  // Import translated data
+  import industriesEn from '../../../../data/industries/en.json';
+  import industriesFr from '../../../../data/industries/fr.json';
+  import industriesAr from '../../../../data/industries/ar.json';
+  
+  import countriesEn from '../../../../data/countries/en.json';
+  import countriesFr from '../../../../data/countries/fr.json';
+  import countriesAr from '../../../../data/countries/ar.json';
+  
+  import employeeCountEn from '../../../../data/employeeCount/en.json';
+  import employeeCountFr from '../../../../data/employeeCount/fr.json';
+  import employeeCountAr from '../../../../data/employeeCount/ar.json';
+  
+  // Map of data by language
+  const industriesMap = {
+    en: industriesEn,
+    fr: industriesFr,
+    ar: industriesAr
+  };
+  
+  const countriesMap = {
+    en: countriesEn,
+    fr: countriesFr,
+    ar: countriesAr
+  };
+  
+  const employeeCountMap = {
+    en: employeeCountEn,
+    fr: employeeCountFr,
+    ar: employeeCountAr
+  };
+  
+  // Reactive data based on current language
+  $: industries = industriesMap[$currentLanguage] || industriesEn;
+  $: countries = countriesMap[$currentLanguage] || countriesEn;
+  $: employeeOptions = employeeCountMap[$currentLanguage] || employeeCountEn;
   
   const dispatch = createEventDispatcher();
   export let formData = {};
@@ -23,9 +58,36 @@
     industry: formData.industry || ''
   };
 
-  let errors = {};
+  let customIndustry = '';
+  
+  // Check if the stored industry is a custom one (not in any of the predefined lists)
+  const isCustomIndustry = companyData.industry && 
+    !industriesEn.includes(companyData.industry) && 
+    !industriesFr.includes(companyData.industry) && 
+    !industriesAr.includes(companyData.industry);
+  
+  let showCustomIndustry = isCustomIndustry;
+  
+  // If there's a custom industry, set it
+  if (isCustomIndustry) {
+    customIndustry = companyData.industry;
+    companyData.industry = industries[industries.length - 1]; // "Other" is always last
+  }
 
-  const employeeOptions = ['Less than 100', 'More than 100'];
+  let errors = {};
+  
+  // Watch for "Other" selection (last item in any language)
+  $: {
+    const otherOption = industries[industries.length - 1];
+    if (companyData.industry === otherOption) {
+      showCustomIndustry = true;
+    } else if (companyData.industry && companyData.industry !== otherOption) {
+      showCustomIndustry = false;
+      if (!isCustomIndustry) {
+        customIndustry = '';
+      }
+    }
+  }
 
   function validateForm() {
     errors = {};
@@ -42,13 +104,20 @@
     if (!companyData.employeeCount) errors.employeeCount = t.required || 'Please select employee count';
     if (!companyData.country) errors.country = t.required || 'Please select a country';
     if (!companyData.industry) errors.industry = t.required || 'Please select an industry';
+    
+    // Validate custom industry if "Other" is selected
+    if (companyData.industry === 'Other' && !customIndustry.trim()) {
+      errors.customIndustry = t.required || 'Please specify your industry';
+    }
 
     return Object.keys(errors).length === 0;
   }
 
   function handleNext() {
     if (validateForm()) {
-      formData = { ...formData, ...companyData, userType: 'company' };
+      // If "Other" is selected, use the custom industry value
+      const finalIndustry = companyData.industry === 'Other' ? customIndustry : companyData.industry;
+      formData = { ...formData, ...companyData, industry: finalIndustry, userType: 'company' };
       dispatch('next');
     }
   }
@@ -157,6 +226,17 @@
           icon={briefcaseIcon}
         />
       </div>
+      
+      {#if showCustomIndustry}
+        <Input
+          label={$translations.companyInfo?.customIndustry || 'Please specify your industry'}
+          bind:value={customIndustry}
+          placeholder={$translations.companyInfo?.customIndustryPlaceholder || 'Enter your industry'}
+          error={errors.customIndustry}
+          required={true}
+          icon={briefcaseIcon}
+        />
+      {/if}
 
       <Dropdown
         label={$translations.companyInfo?.country || 'Country'}

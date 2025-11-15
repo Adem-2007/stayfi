@@ -5,6 +5,7 @@
       "features": "Avantages",
       "integrations": "Intégrations",
       "stats": "Statistiques",
+      "contact": "Contact",
       "getQuote": "Obtenir un devis"
     },
     "hero": {
@@ -77,6 +78,38 @@
         { "value": "24/7", "label": "Support disponible" }
       ],
       "badge": "Équipe certifiée et primée"
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "subtitle": "Vous avez une question ou souhaitez travailler ensemble ? Nous serions ravis de vous entendre.",
+      "infoTitle": "Informations de Contact",
+      "email": "Email",
+      "phone": "Téléphone",
+      "location": "Localisation",
+      "address": "123 Rue des Affaires, Tech City, TC 12345",
+      "followUs": "Suivez-nous",
+      "socialText": "Restez connecté avec nous sur les réseaux sociaux",
+      "formTitle": "Envoyez-nous un Message",
+      "nameLabel": "Votre Nom",
+      "namePlaceholder": "Jean Dupont",
+      "emailLabel": "Votre Email",
+      "emailPlaceholder": "jean@exemple.com",
+      "subjectLabel": "Sujet",
+      "subjectPlaceholder": "Comment pouvons-nous vous aider ?",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Parlez-nous de votre projet...",
+      "sendButton": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "successMessage": "Merci ! Votre message a été envoyé avec succès. Nous vous répondrons bientôt.",
+      "errors": {
+        "nameRequired": "Le nom est requis",
+        "emailRequired": "L'email est requis",
+        "emailInvalid": "Veuillez entrer un email valide",
+        "subjectRequired": "Le sujet est requis",
+        "messageRequired": "Le message est requis",
+        "messageTooShort": "Le message doit contenir au moins 10 caractères",
+        "submitFailed": "Échec de l'envoi du message. Veuillez réessayer."
+      }
     },
     "footer": {
       "description": "Créer des solutions logicielles innovantes qui permettent aux entreprises de prospérer à l'ère numérique.",

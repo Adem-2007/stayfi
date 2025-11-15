@@ -47,6 +47,8 @@
     "companyNamePlaceholder": "Acme Corporation",
     "industry": "Industry",
     "industryPlaceholder": "Select your industry",
+    "customIndustry": "Please specify your industry",
+    "customIndustryPlaceholder": "Enter your industry",
     "employeeCount": "Number of Employees",
     "employeeCountPlaceholder": "Select employee count",
     "email": "Company Email",

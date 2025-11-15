@@ -45,6 +45,8 @@
     "companyNamePlaceholder": "Acme Corporation",
     "industry": "Secteur",
     "industryPlaceholder": "Sélectionnez votre secteur",
+    "customIndustry": "Veuillez spécifier votre secteur",
+    "customIndustryPlaceholder": "Entrez votre secteur",
     "employeeCount": "Nombre d'Employés",
     "employeeCountPlaceholder": "Sélectionnez le nombre d'employés",
     "email": "Email de l'Entreprise",

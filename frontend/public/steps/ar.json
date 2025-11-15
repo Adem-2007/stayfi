@@ -47,6 +47,8 @@
     "companyNamePlaceholder": "شركة أكمي",
     "industry": "المجال",
     "industryPlaceholder": "اختر مجال عملك",
+    "customIndustry": "يرجى تحديد مجال عملك",
+    "customIndustryPlaceholder": "أدخل مجال عملك",
     "employeeCount": "عدد الموظفين",
     "employeeCountPlaceholder": "اختر عدد الموظفين",
     "email": "البريد الإلكتروني للشركة",

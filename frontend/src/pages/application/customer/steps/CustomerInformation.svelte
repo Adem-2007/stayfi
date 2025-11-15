@@ -1,10 +1,24 @@
 <script>
   import { createEventDispatcher } from 'svelte';
-  import { translations, direction } from '../../../../stores/language.js';
+  import { translations, direction, currentLanguage } from '../../../../stores/language.js';
   import Input from '../../components/Input.svelte';
   import Dropdown from '../../components/Dropdown.svelte';
   import TextArea from '../../components/TextArea.svelte';
-  import countries from '../../../../data/countries.json';
+  
+  // Import translated countries
+  import countriesEn from '../../../../data/countries/en.json';
+  import countriesFr from '../../../../data/countries/fr.json';
+  import countriesAr from '../../../../data/countries/ar.json';
+  
+  // Map of countries by language
+  const countriesMap = {
+    en: countriesEn,
+    fr: countriesFr,
+    ar: countriesAr
+  };
+  
+  // Reactive countries based on current language
+  $: countries = countriesMap[$currentLanguage] || countriesEn;
   
   const dispatch = createEventDispatcher();
   export let formData = {};

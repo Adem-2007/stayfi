@@ -1,7 +1,7 @@
 <script>
   import { createEventDispatcher, onMount } from 'svelte';
-  // Import the translations store
   import { translations } from '../../../../stores/language.js';
+  import { sendVerificationEmail as sendEmail, verifyCode as verify } from '../../../../stores/submit.js';
   import CodeInput from './components/CodeInput.svelte';
   import ResendButton from './components/ResendButton.svelte';
   
@@ -35,16 +35,7 @@
 
   async function sendVerificationEmail() {
     try {
-      const response = await fetch('http://localhost:3001/api/send-verification', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, name })
-      });
-      
-      if (!response.ok) {
-        const data = await response.json();
-        throw new Error(data.error || 'Failed to send verification email');
-      }
+      await sendEmail(email);
     } catch (err) {
       error = err.message;
     }
@@ -63,17 +54,7 @@
     
     try {
       const code = verificationCode.join('');
-      const response = await fetch('http://localhost:3001/api/verify-code', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, code })
-      });
-      
-      const data = await response.json();
-      
-      if (!response.ok) {
-        throw new Error(data.error || 'Invalid verification code');
-      }
+      await verify(email, code);
       
       success = true;
       setTimeout(() => {

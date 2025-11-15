@@ -5,6 +5,7 @@
       "features": "لماذا نحن",
       "integrations": "التكاملات",
       "stats": "إحصائيات",
+      "contact": "اتصل بنا",
       "getQuote": "اطلب عرض سعر"
     },
     "hero": {
@@ -77,6 +78,38 @@
         { "value": "24/7", "label": "دعم فني متاح" }
       ],
       "badge": "فريق معتمد وحائز على جوائز"
+    },
+    "contact": {
+      "title": "تواصل معنا",
+      "subtitle": "هل لديك سؤال أو تريد العمل معنا؟ نحن نحب أن نسمع منك.",
+      "infoTitle": "معلومات الاتصال",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "location": "الموقع",
+      "address": "123 شارع الأعمال، مدينة التقنية، TC 12345",
+      "followUs": "تابعنا",
+      "socialText": "ابق على اتصال معنا على وسائل التواصل الاجتماعي",
+      "formTitle": "أرسل لنا رسالة",
+      "nameLabel": "اسمك",
+      "namePlaceholder": "أحمد محمد",
+      "emailLabel": "بريدك الإلكتروني",
+      "emailPlaceholder": "ahmed@example.com",
+      "subjectLabel": "الموضوع",
+      "subjectPlaceholder": "كيف يمكننا مساعدتك؟",
+      "messageLabel": "الرسالة",
+      "messagePlaceholder": "أخبرنا المزيد عن مشروعك...",
+      "sendButton": "إرسال الرسالة",
+      "sending": "جاري الإرسال...",
+      "successMessage": "شكراً لك! تم إرسال رسالتك بنجاح. سنتواصل معك قريباً.",
+      "errors": {
+        "nameRequired": "الاسم مطلوب",
+        "emailRequired": "البريد الإلكتروني مطلوب",
+        "emailInvalid": "يرجى إدخال بريد إلكتروني صحيح",
+        "subjectRequired": "الموضوع مطلوب",
+        "messageRequired": "الرسالة مطلوبة",
+        "messageTooShort": "يجب أن تحتوي الرسالة على 10 أحرف على الأقل",
+        "submitFailed": "فشل إرسال الرسالة. يرجى المحاولة مرة أخرى."
+      }
     },
     "footer": {
       "description": "صياغة حلول برمجية مبتكرة تمكّن الشركات من الازدهار في العصر الرقمي.",

@@ -1,6 +1,7 @@
 <script>
   import { createEventDispatcher } from 'svelte';
   import { translations, direction } from '../../../../stores/language.js';
+  import { submitApplication } from '../../../../stores/submit.js';
   import SuccessModal from './components/SuccessModal.svelte';
   import SummarySection from './components/SummarySection.svelte';
   
@@ -17,29 +18,8 @@
     submitting = true;
     
     try {
-      // Note: Submissions don't require authentication (public endpoint)
-      const API_URL = 'http://localhost:3001/api/submit-application';
+      const data = await submitApplication(formData);
       
-      const response = await fetch(API_URL, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ formData })
-      });
-
-      // Check if response is JSON
-      const contentType = response.headers.get('content-type');
-      if (!contentType || !contentType.includes('application/json')) {
-        throw new Error('Server returned non-JSON response. Please ensure the backend server is running on port 3001.');
-      }
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || 'Failed to submit application');
-      }
-
       // Store submission ID for reference
       formData.submissionId = data.submissionId;
       

@@ -7,6 +7,7 @@
   import Features from './components/Features.svelte';
   import Integration from './components/Integration.svelte';
   import Stats from './components/Stats.svelte';
+  import ContactUs from './components/ContactUs.svelte';
   import Footer from '../../common/Footer.svelte';
 
   // Import all translation files
@@ -38,6 +39,9 @@
   </div>
   <div id="stats">
     <Stats />
+  </div>
+  <div id="contact">
+    <ContactUs />
   </div>
   <Footer />
 </div>

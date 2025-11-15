@@ -1,7 +1,8 @@
 import { writable } from 'svelte/store';
 import { push } from 'svelte-spa-router';
+import API_BASE_URL from '../config/api.js';
 
-const API_URL = 'http://localhost:3001/api';
+const API_URL = API_BASE_URL;
 const SESSION_CHECK_INTERVAL = 30000; // Check every 30 seconds
 const ACTIVITY_TIMEOUT = 10 * 60 * 1000; // 10 minutes
 

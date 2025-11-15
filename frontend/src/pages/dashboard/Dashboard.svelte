@@ -106,10 +106,9 @@
   />
   
   <!-- Main Content -->
-  <div class="lg:{$dashboardDirection === 'rtl' ? 'pr-64' : 'pl-64'} transition-all duration-300">
-    <!-- Mobile-Optimized Header -->
+  <div class="transition-all duration-300 {$dashboardDirection === 'rtl' ? 'lg:pr-64' : 'lg:pl-64'}">
     <div class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-30">
-      <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-3 sm:py-6">
+      <div class="px-3 sm:px-6 lg:px-8 py-3 sm:py-6">
         <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <!-- Mobile Menu Button & Logo -->
           <div class="flex items-center gap-2 sm:gap-3 w-full sm:w-auto">
@@ -174,7 +173,7 @@
     </div>
 
     <!-- Content -->
-    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-8 lg:py-12">
+    <div class="px-3 sm:px-6 lg:px-8 py-4 sm:py-8 lg:py-12">
       {#if currentView === 'steps'}
         {#if showBuilder}
           <StepBuilder 

@@ -5,6 +5,7 @@
             "features": "Features",
             "integrations": "Integrations",
             "stats": "Stats",
+            "contact": "Contact",
             "getQuote": "Get a Quote"
         },
         "hero": {
@@ -138,6 +139,38 @@
                 }
             ],
             "badge": "Certified & Award-Winning Team"
+        },
+        "contact": {
+            "title": "Get in Touch",
+            "subtitle": "Have a question or want to work together? We'd love to hear from you.",
+            "infoTitle": "Contact Information",
+            "email": "Email",
+            "phone": "Phone",
+            "location": "Location",
+            "address": "123 Business St, Tech City, TC 12345",
+            "followUs": "Follow Us",
+            "socialText": "Stay connected with us on social media",
+            "formTitle": "Send us a Message",
+            "nameLabel": "Your Name",
+            "namePlaceholder": "John Doe",
+            "emailLabel": "Your Email",
+            "emailPlaceholder": "john@example.com",
+            "subjectLabel": "Subject",
+            "subjectPlaceholder": "How can we help you?",
+            "messageLabel": "Message",
+            "messagePlaceholder": "Tell us more about your project...",
+            "sendButton": "Send Message",
+            "sending": "Sending...",
+            "successMessage": "Thank you! Your message has been sent successfully. We'll get back to you soon.",
+            "errors": {
+                "nameRequired": "Name is required",
+                "emailRequired": "Email is required",
+                "emailInvalid": "Please enter a valid email",
+                "subjectRequired": "Subject is required",
+                "messageRequired": "Message is required",
+                "messageTooShort": "Message must be at least 10 characters",
+                "submitFailed": "Failed to send message. Please try again."
+            }
         },
         "footer": {
       "description": "Crafting innovative software solutions that empower businesses to thrive in the digital age.",

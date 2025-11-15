@@ -53,6 +53,7 @@
         <a href="#features" class="font-medium {isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-yellow-400'}">{$translations.home?.navbar?.features}</a>
         <a href="#integrations" class="font-medium {isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-yellow-400'}">{$translations.home?.navbar?.integrations}</a>
         <a href="#stats" class="font-medium {isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-yellow-400'}">{$translations.home?.navbar?.stats}</a>
+        <a href="#contact" class="font-medium {isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-yellow-400'}">{$translations.home?.navbar?.contact || 'Contact'}</a>
         
         <!-- Desktop Language Switcher -->
         <div class="relative">
@@ -110,6 +111,7 @@
           <a href="#features" on:click={()=>isMenuOpen=false} class="py-2 px-2 text-gray-700 hover:text-blue-600 font-medium rounded-md hover:bg-gray-50">{$translations.home?.navbar?.features}</a>
           <a href="#integrations" on:click={()=>isMenuOpen=false} class="py-2 px-2 text-gray-700 hover:text-blue-600 font-medium rounded-md hover:bg-gray-50">{$translations.home?.navbar?.integrations}</a>
           <a href="#stats" on:click={()=>isMenuOpen=false} class="py-2 px-2 text-gray-700 hover:text-blue-600 font-medium rounded-md hover:bg-gray-50">{$translations.home?.navbar?.stats}</a>
+          <a href="#contact" on:click={()=>isMenuOpen=false} class="py-2 px-2 text-gray-700 hover:text-blue-600 font-medium rounded-md hover:bg-gray-50">{$translations.home?.navbar?.contact || 'Contact'}</a>
           <a href="#/application" class="mt-2 px-6 py-2.5 bg-yellow-400 text-blue-900 rounded-lg font-semibold text-center">{$translations.home?.navbar?.getQuote}</a>
         </div>
       </div>
