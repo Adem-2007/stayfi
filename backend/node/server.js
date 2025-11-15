@@ -19,6 +19,10 @@ app.use(cors());
 app.use(express.json({ limit: '50mb' })); // Increase limit for base64 file uploads
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
+// Serve uploaded files statically (protected by checking if user is authenticated)
+const path = require('path');
+app.use('/api/design-files', express.static(path.join(__dirname, 'uploads/design-files')));
+
 // Public Routes (no authentication required)
 app.use('/api/auth', authRoutes);
 app.use('/api', verificationRoutes);
@@ -33,6 +37,7 @@ app.post('/api/submit-application', SubmissionController.submitApplication);
 // Protected: Only authenticated admins can view submissions
 app.get('/api/submissions', authMiddleware, SubmissionController.getSubmissions);
 app.get('/api/submissions/:id', authMiddleware, SubmissionController.getSubmissionById);
+app.delete('/api/submissions/:id', authMiddleware, SubmissionController.deleteSubmission);
 
 // Health check
 app.get('/api/health', (req, res) => {

@@ -101,6 +101,12 @@ $RECYCLE.BIN/
 .cache
 *.tsbuildinfo
 
+# -------------------------------------------------------------------------
+# Uploads
+# -------------------------------------------------------------------------
+# User-uploaded files should not be committed to Git
+/uploads
+
 
 # =========================================================================
 # A NOTE ON LOCK FILES (package-lock.json, yarn.lock)

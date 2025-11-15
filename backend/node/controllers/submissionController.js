@@ -1,6 +1,7 @@
 const Submission = require('../models/Submission');
 const PDFGenerator = require('../utils/pdfGenerator');
 const EmailService = require('../utils/emailService');
+const FileStorage = require('../utils/fileStorage');
 
 class SubmissionController {
   static async submitApplication(req, res) {
@@ -14,12 +15,25 @@ class SubmissionController {
       // Generate submission ID
       const submissionId = `SUB-${Date.now()}-${Math.random().toString(36).substring(2, 11)}`;
 
+      // Save design files to disk
+      const savedFiles = await FileStorage.saveDesignFiles(formData.designFiles, submissionId);
+      
+      // Store file metadata instead of base64 data
+      const formDataToStore = { ...formData };
+      if (savedFiles.length > 0) {
+        formDataToStore.designFiles = savedFiles.map(f => ({
+          filename: f.filename,
+          mimeType: f.mimeType,
+          size: f.size
+        }));
+      }
+
       // Create submission in MongoDB
       const submission = await Submission.create({
         submissionId,
         userType: formData.userType,
         email: formData.email,
-        formData,
+        formData: formDataToStore,
         status: 'pending'
       });
 
@@ -86,6 +100,34 @@ class SubmissionController {
       console.error('Error fetching submission:', error);
       res.status(500).json({ 
         error: 'Failed to fetch submission',
+        details: error.message 
+      });
+    }
+  }
+
+  static async deleteSubmission(req, res) {
+    try {
+      const { id } = req.params;
+      const submission = await Submission.findOne({ submissionId: id });
+      
+      if (!submission) {
+        return res.status(404).json({ error: 'Submission not found' });
+      }
+      
+      // Delete associated design files
+      FileStorage.deleteDesignFiles(id);
+      
+      // Delete submission from database
+      await Submission.deleteOne({ submissionId: id });
+      
+      res.json({ 
+        success: true, 
+        message: 'Submission deleted successfully' 
+      });
+    } catch (error) {
+      console.error('Error deleting submission:', error);
+      res.status(500).json({ 
+        error: 'Failed to delete submission',
         details: error.message 
       });
     }
